@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="weekTwoStyle.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About The Creator</title>
 </head>
 
@@ -12,15 +12,34 @@
     <h1 id="top;" style="font-size:250%;">About The Creator</h1>
 
     <div>
-        <p>My name is Jacob Thomas. I am a software engineering major in my last year at BYUI. I will graduate at the
+        <p>My name is Jacob Thomas and today is 
+        
+        <?php
+           echo "Today is " . date("l.");
+        ?>
+        
+         I am a software engineering major in my last year at BYUI. I will graduate at the
             end of spring 2020. I currently work at Melaleuca as a QA tester.
             I live in Rexburg near porter park with my wife and daugher. She is new to the family and only 1.5 years
             old. We enjoy playing together at home and at the park. We are excited
             for the cooler weather! <p>
+
+
+            <button onclick="switchBackground()" id="Switch Background">Change the background color!</button>
+
+            
     </div>
 
-    <img class="center" src="family.jpg" alt="family photo" >
+    <script>
+        function switchBackground() { //done
 
+            document.body.style.backgroundColor = "red";
+        }
+    </script>
+    
+
+    <img class="center" src="family.jpg" alt="family photo" >
+    
 
     <footer>
         <p>created by: Jacob Thomas</p>
@@ -36,3 +55,4 @@
 </body>
 
 </html>
+
