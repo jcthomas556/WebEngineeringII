@@ -12,16 +12,33 @@
     <h1 id="top;" style="font-size:250%;">About The Creator</h1>
 
     <div>
-        <p>My name is Jacob Thomas. I am a software engineering major in my last year at BYUI. I will graduate at the
+        <p>My name is Jacob Thomas and 
+            
+        <?php
+
+          echo "Today is " . date("l.");
+        ?>
+
+            I am a software engineering major in my last year at BYUI. I will graduate at the
             end of spring 2020. I currently work at Melaleuca as a QA tester.
             I live in Rexburg near porter park with my wife and daugher. She is new to the family and only 1.5 years
             old. We enjoy playing together at home and at the park. We are excited
             for the cooler weather! <p>
     </div>
 
-    <img src="family.jpg" alt="Townsend's Warbler"  class="picture">
+    <img src="family.jpg" alt="Family Image"  class="center">
 
 
+
+    <button type="button" onclick="changeBackground()">Change background color</button>
+
+    <script>
+        function changeBackground() {
+        document.body.style.backgroundColor = "red";
+        }
+    </script>
+
+    
     <footer>
         <p>created by: Jacob Thomas</p>
         <a class="Links" href="https://www.linkedin.com/in/jacob-thomas-b529bb64/"> Check out my LinkedIn</a>
