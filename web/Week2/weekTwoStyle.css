@@ -17,7 +17,10 @@ p {
   font-family: 'Teko';
 }
 
-
+.center{
+  display: block;
+  text-align: center;
+}
 
 .Links {
   display: block;
