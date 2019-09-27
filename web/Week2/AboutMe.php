@@ -30,7 +30,7 @@
 
 
 
-    <button type="button" onclick="changeBackground()">Change background color</button>
+    <button class="center" type="button" onclick="changeBackground()">Do you like red...?</button>
 
     <script>
         function changeBackground() {
@@ -38,7 +38,7 @@
         }
     </script>
 
-    
+
     <footer>
         <p>created by: Jacob Thomas</p>
         <a class="Links" href="https://www.linkedin.com/in/jacob-thomas-b529bb64/"> Check out my LinkedIn</a>

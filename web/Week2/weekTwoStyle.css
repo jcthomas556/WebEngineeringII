@@ -24,3 +24,10 @@ p {
   text-align: center;
   font-size: 2em;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
