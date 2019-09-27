@@ -17,16 +17,10 @@ p {
   font-family: 'Teko';
 }
 
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+
 
 .Links {
   display: block;
   text-align: center;
   font-size: 2em;
 }
-
