@@ -19,7 +19,7 @@
             for the cooler weather! <p>
     </div>
 
-    <img src="family.jpg" alt="Townsend's Warbler"  class="picture">
+    <img src="family.jpg" alt="family photo"  class="center">
 
 
     <footer>
