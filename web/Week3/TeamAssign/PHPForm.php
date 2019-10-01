@@ -13,9 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "User Name: $name <br> User Email Address: <a href='mailto:$email'>$email</a> 
     <br> User Major: $major <br> User Comments: $comments";
 
-var_dump($continents);
-
-   
+    if(!empty($continents)){
+        for($i=0; $i < count($continents); $i++)
+        {
+            echo($continents[$i] . " ");
+        }
+    }
 
 }
 
