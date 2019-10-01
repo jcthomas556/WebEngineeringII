@@ -19,12 +19,18 @@
     <br><br>
 
 
-
+    <?php
+    $majorOptions = array("Computer Science","Web Design and Development","Computer Information Technology", "Computer Engineering");
+    ?>
+    
     <p>Please select your major:</p>
-    <input type="radio" name="major" value="Computer Science"> Computer Science<br>
-    <input type="radio" name="major" value="Web Design and Development"> Web Design and Development<br>
-    <input type="radio" name="major" value="Computer Information Technology"> Computer Information Technology<br>
-    <input type="radio" name="major" value="Computer Engineering"> Computer Engineering<br>
+
+    <?php
+    foreach{$majorOptions as $major){
+        echo "<input type='radio' name='major' value='$major'> $major<br>";
+    }
+    ?>
+    
 
     <br>
     <textarea name="comments"></textarea>
