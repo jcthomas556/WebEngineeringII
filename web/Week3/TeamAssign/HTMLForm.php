@@ -37,13 +37,13 @@
 
 
     <p>Select all continents visated</p>
-    <input type="checkbox" name="continentsVisated[]" value="North America"> North America<br>
-    <input type="checkbox" name="continentsVisated[]" value="South America"> South America<br>
-    <input type="checkbox" name="continentsVisated[]" value="Europe"> Europe<br>
-    <input type="checkbox" name="continentsVisated[]" value="Asia"> Asia<br>
-    <input type="checkbox" name="continentsVisated[]" value="Australia"> Australia<br>
-    <input type="checkbox" name="continentsVisated[]" value="Africa"> Africa<br>
-    <input type="checkbox" name="continentsVisated[]" value="Antarctica"> Antarctica<br>
+    <input type="checkbox" name="continentsVisated[]" value="1"> North America<br>
+    <input type="checkbox" name="continentsVisated[]" value="2"> South America<br>
+    <input type="checkbox" name="continentsVisated[]" value="3"> Europe<br>
+    <input type="checkbox" name="continentsVisated[]" value="4"> Asia<br>
+    <input type="checkbox" name="continentsVisated[]" value="5"> Australia<br>
+    <input type="checkbox" name="continentsVisated[]" value="6"> Africa<br>
+    <input type="checkbox" name="continentsVisated[]" value="7"> Antarctica<br>
 
     <br>
 
