@@ -26,7 +26,7 @@
     <p>Please select your major:</p>
 
     <?php
-    foreach{$majorOptions as $major){
+    foreach($majorOptions as $major){
         echo "<input type='radio' name='major' value='$major'> $major<br>";
     }
     ?>
