@@ -43,7 +43,7 @@
              echo($orderArray[$order[$i]]);
              
             }
-            echo ". <br> That is a total of "  $_SESSION["total"]  " dollars. " 
+            echo ". <br> That is a total of $_SESSION["total"] dollars. " 
         }
 
        
