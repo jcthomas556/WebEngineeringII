@@ -43,7 +43,10 @@
              echo($orderArray[$order[$i]]);
              
             }
-            echo ". <br> That is a total of $_SESSION["total"] dollars. "; 
+            echo ". <br> That is a total of ";
+            echo $_SESSION["total"];
+            echo " dollars. "; 
+            //this is a mess but I couldn't figure out why it wouldn't print in one line
         }
 
        
