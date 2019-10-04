@@ -1,7 +1,7 @@
 <?php
     session_start();
     if($_SESSION['total']){
-        echo 'Your Email Is Here!  :) ';
+        echo $_SESSION["total"];
         }
 ?>
 <!DOCTYPE html>
