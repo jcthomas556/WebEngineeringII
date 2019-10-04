@@ -9,6 +9,35 @@
 
 </head>
 
+<?php
+    echo "Your carts items: "
+
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+        $order = $_POST["item"];
+        if(!empty($order)){
+            $order = array("80" => "HeadPhones", "25" => "Mouse" , "30" => "Keyboard" , "99" => "Monitor" );
+
+            for($i=0; $i < count($order); $i++)
+            {
+                if($i > 0){
+                  echo ", ";
+            }
+             echo($continentsArray[$continents[$i]]);
+            }
+            
+        }
+
+       
+    } else {
+        echo "You have no items in your cart!";
+    }
+
+?>
+
+
+
 <body>
 <script src="ShoppingCartScript.js"></script>
     <header>

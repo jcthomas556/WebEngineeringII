@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -18,6 +21,7 @@
 
     <h2 id="subheader">Welcome to the store! Check the box of any desired item.</h2>
 
+<form method="POST" action="CartView.php">
     <table >
         <tr>
             <th>Product</th>
@@ -28,25 +32,25 @@
         <tr>
             <td>Headphones</td>
             <td>$80.00</td>
-            <td><input type="checkbox" name="item_0" value="80" onclick="calculateTotal(this)"></td>
+            <td><input type="checkbox" name="item[]" value="80" onclick="calculateTotal(this)"></td>
 
         </tr>
         <tr>
             <td>Mouse</td>
             <td>$25.00</td>
-            <td><input type="checkbox" name="item_1" value="25" onclick="calculateTotal(this)"></td>
+            <td><input type="checkbox" name="item[]" value="25" onclick="calculateTotal(this)"></td>
 
         </tr>
         <tr>
             <td>Keyboard</td>
             <td>$30.00</td>
-            <td><input type="checkbox" name="item_2" value="30" onclick="calculateTotal(this)"></td>
+            <td><input type="checkbox" name="item[]" value="30" onclick="calculateTotal(this)"></td>
 
         </tr>
         <tr>
             <td>Monitor</td>
             <td>$99</td>
-            <td><input type="checkbox" name="item_3" value="99" onclick="calculateTotal(this)"></td>
+            <td><input type="checkbox" name="item[]" value="99" onclick="calculateTotal(this)"></td>
             
 
         </tr>
@@ -57,22 +61,19 @@
             
 
         </tr>
-                                
-    
-    </table>
-
-    
-
-  
-
-   
-
-  
+    </table>  
 </div>
 
+<button class = "address" type="submit" value="Submit">Save Order</button>
+
+<br>
+
+<button onclick="window.location.href = 'CartView.php';">View Cart</button>
+
+</form>
 
 
-<button class = "address" type="submit" value="Submit">Add To Cart and Checkout</button>
+
 
     <br><br><br>
     <hr>
