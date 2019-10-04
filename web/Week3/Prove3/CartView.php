@@ -2,8 +2,8 @@
     session_start();
     $total = $_POST["total"];
          echo $total;
-
-         $_SESSION["total2"] = "total";
+var_dump($total);
+        
     //     }
 ?>
 <!DOCTYPE html>
@@ -45,8 +45,8 @@
              echo($orderArray[$order[$i]]);
              
             }
-            echo ". <br> That is a total of ";
-            echo $_SESSION["total2"];
+            echo ". <br> That is a total of $";
+            echo $total;
             echo " dollars. "; 
             //this is a mess but I couldn't figure out why it wouldn't print in one line
         }
