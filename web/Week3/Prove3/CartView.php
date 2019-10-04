@@ -1,5 +1,5 @@
 <?php
-    session_start(); 
+    session_start();
     if($_SESSION['total']){
         echo 'Your Email Is Here!  :) ';
         }
@@ -43,7 +43,7 @@
              echo($orderArray[$order[$i]]);
              
             }
-            echo ". <br> That is a total of " . $_SESSION["total"] . " dollars. " 
+           // echo ". <br> That is a total of " . $_SESSION["total"] . " dollars. " 
         }
 
        
