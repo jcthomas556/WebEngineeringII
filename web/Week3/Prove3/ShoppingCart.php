@@ -64,10 +64,6 @@
     </table>  
 </div>
 
-<?php
-   $_SESSION["total"] = "total"; 
-?>
-
 
 <br>
 

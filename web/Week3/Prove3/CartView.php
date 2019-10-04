@@ -1,7 +1,9 @@
 <?php
     session_start();
-    // if($_SESSION['total']){
-    //     echo $_SESSION["total"];
+    $total = $_POST["total"];
+         echo $total;
+
+         $_SESSION["total2"] = "total";
     //     }
 ?>
 <!DOCTYPE html>
@@ -44,7 +46,7 @@
              
             }
             echo ". <br> That is a total of ";
-            echo $_SESSION["total"];
+            echo $_SESSION["total2"];
             echo " dollars. "; 
             //this is a mess but I couldn't figure out why it wouldn't print in one line
         }
