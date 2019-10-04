@@ -35,14 +35,14 @@
         $order = $_POST["item"];
 
         if(!empty($order)){
-            $orderArray = array("80" => "HeadPhones", "25" => "Mouse" , "30" => "Keyboard" , "99" => "Monitor" );
+            $_SESSION["orderArray"] = array("80" => "HeadPhones", "25" => "Mouse" , "30" => "Keyboard" , "99" => "Monitor" );
 
             for($i=0; $i < count($order); $i++)
             {
                 if($i > 0){
                   echo ", ";
             }
-             echo($orderArray[$order[$i]]);
+             echo($_SESSION[$orderArray[$order[$i]]]);
              
             }
             echo ". <br> That is a total of $";
@@ -57,7 +57,7 @@
     }
 
     //maybe just put total here in HTML instead?
-    
+
     //get what is in the checkbox values and fill variables. echo those variables here
         //make a button to remove the item from the cart
 
