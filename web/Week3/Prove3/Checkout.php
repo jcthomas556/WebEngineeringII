@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -17,7 +20,7 @@
 
     <form class="address">
 
-<h3> Contact Info </h3>
+<h3> Please fill out your Contact Info for shipping.</h3>
     <p>First Name</p>
     <input id="first_name" type="text" name="first_name" onchange="validateFirstName()">
 
@@ -51,7 +54,37 @@
 </form>
 
     <?php
-        //get what is in the checkbox values and fill variables. echo those variables here
+        echo "Your items: <br>";
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+            $order = $_POST["item"];
+    
+            if(!empty($order)){
+                $orderArray = array("80" => "HeadPhones", "25" => "Mouse" , "30" => "Keyboard" , "99" => "Monitor" );
+    
+                for($i=0; $i < count($order); $i++)
+                {
+                    if($i > 0){
+                      echo ", ";
+                }
+                 echo($orderArray[$order[$i]]);
+                 
+                }
+                echo ". <br> That is a total of $";
+                echo $total;
+                echo " dollars. "; 
+                //this is a mess but I couldn't figure out why it wouldn't print in one line
+            }
+    
+           
+        } else {
+            echo "You have no items in your cart!";
+        }
+       
+
+
+        
         //make a button to remove the item from the cart
 
     ?>

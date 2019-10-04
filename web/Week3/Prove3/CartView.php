@@ -1,8 +1,8 @@
 <?php
     session_start();
     $total = $_POST["total"];
-         echo $total;
-var_dump($total);
+        
+    var_dump($total);
         
     //     }
 ?>
@@ -52,10 +52,12 @@ var_dump($total);
         }
 
        
-    } //else {
-       // echo "You have no items in your cart!";
-    //}
+    } else {
+        echo "You have no items in your cart!";
+    }
 
+    //maybe just put total here in HTML instead?
+    
     //get what is in the checkbox values and fill variables. echo those variables here
         //make a button to remove the item from the cart
 
