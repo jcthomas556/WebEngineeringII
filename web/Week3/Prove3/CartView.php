@@ -35,8 +35,9 @@
                   echo ", ";
             }
              echo($orderArray[$order[$i]]);
+             
             }
-            
+            echo ". <br> That is a total of " . $_SESSION["total"] . " dollars. " 
         }
 
        
@@ -53,7 +54,7 @@
 
 
         
-    
+<br> <br>    
 
 <button onclick="window.location.href = 'ShoppingCart.php';">Click to return to the store</button>
 <br><br>

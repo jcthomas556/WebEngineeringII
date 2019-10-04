@@ -64,17 +64,16 @@
     </table>  
 </div>
 
-<button class = "address" type="submit" value="Submit">Save Order</button>
+<?php
+   $_SESSION["total"] = "total"; 
+?>
+
 
 <br>
 
-<button onclick="window.location.href = 'CartView.php';">View Cart</button>
+<button class = "address" type="submit" value="Submit">Place Order</button>
 
 </form>
-
-
-
-
     <br><br><br>
     <hr>
     <footer id="footer">
