@@ -1,8 +1,8 @@
 <?php
     session_start();
-    if($_SESSION['total']){
-        echo $_SESSION["total"];
-        }
+    // if($_SESSION['total']){
+    //     echo $_SESSION["total"];
+    //     }
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
@@ -43,7 +43,7 @@
              echo($orderArray[$order[$i]]);
              
             }
-           // echo ". <br> That is a total of " . $_SESSION["total"] . " dollars. " 
+            echo ". <br> That is a total of " . $_SESSION["total"] . " dollars. " 
         }
 
        
