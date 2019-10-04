@@ -57,7 +57,7 @@
         echo "Your items: <br>";
 
         
-        
+        //TODO FIRST figure out session variables so I can get total and the array to be used on multiple pages.
             $order = $_POST["item"];
     
             if(!empty($order)){
