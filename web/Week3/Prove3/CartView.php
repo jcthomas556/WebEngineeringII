@@ -10,7 +10,7 @@
 </head>
 
 <?php
-    echo "Your carts items: "
+    echo "Your carts items: ";
 
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
