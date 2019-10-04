@@ -1,7 +1,8 @@
 <?php
-    session_start();
-
-    
+    session_start(); 
+    if($_SESSION['total']){
+        echo 'Your Email Is Here!  :) ';
+        }
 ?>
 <!DOCTYPE html>
 <html lang="en-us">
@@ -46,9 +47,9 @@
         }
 
        
-    } else {
-        echo "You have no items in your cart!";
-    }
+    } //else {
+       // echo "You have no items in your cart!";
+    //}
 
     //get what is in the checkbox values and fill variables. echo those variables here
         //make a button to remove the item from the cart
