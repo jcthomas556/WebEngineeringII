@@ -56,7 +56,7 @@
     <?php
         echo "Your items: <br>";
 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
         
             $order = $_POST["item"];
     
@@ -78,13 +78,11 @@
             }
     
            
-        } else {
-            echo "You have no items in your cart!";
-        }
+       
        
 
 
-        
+
         //make a button to remove the item from the cart
 
     ?>
