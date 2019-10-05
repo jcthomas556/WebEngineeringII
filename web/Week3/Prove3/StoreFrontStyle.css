@@ -1,0 +1,156 @@
+body {
+    background-color: rgb(187, 174, 102);
+  }
+  
+  h1 {
+    display:block;
+    color: lightgray;
+    margin: auto;
+   font-family: 'Teko';
+    text-align: center;
+    font-size: 5.5em;
+  }
+  #subheader {
+    display:block;
+    font-family: "Courier New";
+    
+    
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    margin: auto;
+  
+  }
+  
+  .address {
+    
+    display:block;
+    font-family: "Courier New";
+    
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    margin: auto;
+    
+  
+  
+  }
+  
+  table{
+    display: flex;
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    color: black;
+    order: 1;
+    
+    
+    
+    
+  }
+  
+  #aprNum {
+    
+    display:block;
+    font-family: "Courier New";
+    
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    margin: auto;
+  
+  
+  }
+  
+  #termNum {
+    display:block;
+    font-family: "Courier New";
+    
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    margin: auto;
+  
+  
+  }
+  #amountNum {
+    
+    display:block;
+    font-family: "Courier New";
+    
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    margin: auto;
+  
+  
+  }
+  #paymentNum {
+    
+    display:block;
+    font-family: "Courier New";
+    
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    margin: auto;
+  
+  
+  
+  }
+  #clearNum {
+    
+    display:block;
+    font-family: "Courier New";
+    
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    margin: auto;
+  
+  
+  
+  }
+  #calculateNum {
+    
+    display:block;
+    font-family: "Courier New";
+    
+    padding: 10px 0px 5px 0px;
+    width: 250px;
+    text-align: center; 
+    margin: auto;
+  
+  }
+  
+  
+  
+  
+  #footer {
+    display:block;
+    background-color: rgb(158, 154, 173);
+    font-family: "Courier New";
+    padding: 10px 0px 5px 0px;
+    width: 510px;
+    text-align: center;
+    margin: auto;
+  
+  
+  }
+  
+  #pageLayout{
+                display:flex;
+                justify-content: space-between;
+    
+  
+  }
+  
+  #right {
+    display:block;
+    padding: 10px 0px 5px 0px;
+    width: 510px;
+    text-align: center;
+    margin: right;
+  
+  
+  }

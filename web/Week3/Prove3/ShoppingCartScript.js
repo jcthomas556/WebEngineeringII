@@ -95,3 +95,7 @@ document.getElementById("total").value = total;
     //alert(checkedValue);
 
 }
+
+function removeOne(){
+    unset($orderArray[$_SESSION['order'][0]]);
+}
