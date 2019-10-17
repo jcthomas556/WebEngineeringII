@@ -31,8 +31,8 @@ try {
     <?php
     foreach ($db->query('SELECT * FROM player_characters', PDO::FETCH_ASSOC) as $row)
     {
-        echo '<p><b>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
-        'AC:' . $row['player_ac'] . '</b> -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
+        echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
+        'AC:' . $row['player_ac'] . ' -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
     }
     ?>
 
