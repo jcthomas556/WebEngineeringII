@@ -29,11 +29,11 @@ try {
     <h1>Initiative Tracker</h1>
     <h3>All player characters</h3>
     <?php
-    foreach ($db->query('SELECT * FROM player_characters', PDO::FETCH_ASSOC) as $row)
-    {
-        echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
-        'AC:' . $row['player_ac'] . ' -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
-    }
+    // foreach ($db->query('SELECT * FROM player_characters', PDO::FETCH_ASSOC) as $row)
+    // {
+    //     echo '<p><b>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
+    //     'AC:' . $row['player_ac'] . ' -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
+    // }
     ?>
 
 </body>
