@@ -12,7 +12,7 @@ try {
     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPass);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ​
-} catch (PDOException $ex) {
+} catch (PDOException $e) {
     echo 'ERROR: ' . $ex->getMessage();
     die();
 }
@@ -31,10 +31,10 @@ try {
     <?php
     foreach ($db->query('SELECT * FROM player_characters', PDO::FETCH_ASSOC) as $row)
     {
-        echo '<p><b>' . $row['player_fname'] . ' ' . $row['player_lname'] . 'AC:' . $row['player_ac'] . '</b> -- "' . $row['player_race'] . ', "' . $row['player_class']  '"</p>';
+        echo '<p><b>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
+        'AC:' . $row['player_ac'] . '</b> -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
     }
     ?>
-    <br><br>
 
 </body>
 </html>
