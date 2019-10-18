@@ -20,6 +20,13 @@
 </head>
 <body>
 
+ <?php
+                 foreach ($db->query('SELECT * FROM player_characters', PDO::FETCH_ASSOC) as $row)
+                 {
+                     echo '<p><b>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
+                     'AC:' . $row['player_ac'] . ' -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
+                 }
+             ?>
 
 <div class="jumbotron text-center" style="background-color:maroon">
   <h1 id="banner">D&D Initiative Tracker</h1>
