@@ -32,7 +32,7 @@
      <button onclick="window.location.href='newCharacter.html'" type="button" class="btn btn-secondary btn-lg btn-block">Create PC</button>
      <div class="col-sm-4" ></div>
      <br><br>
-     <button type="button" class="btn btn-secondary btn-lg btn-block">Create NPC</button>
+     <button onclick="window.location.href='npcCreation.html'" type="button" class="btn btn-secondary btn-lg btn-block">Create NPC</button>
      <div class="col-sm-4" ></div>
      <br><br>
      <button onclick="" type="button" class="btn btn-primary btn-lg btn-block">Start Roster!</button>
