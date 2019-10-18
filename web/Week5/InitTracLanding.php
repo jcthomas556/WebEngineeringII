@@ -20,10 +20,6 @@
 </head>
 <body>
 
-<style>
-
-</style>
-
 
 <div class="jumbotron text-center" style="background-color:maroon">
   <h1 id="banner">D&D Initiative Tracker</h1>
@@ -33,13 +29,13 @@
   <div class="row"></div>
  <div class="col-sm-4" ></div>
     <div class="col-lg-4">
-     <button type="button" class="btn btn-secondary btn-lg btn-block">Create PC</button>
+     <button onclick="newCharacter.html" type="button" class="btn btn-secondary btn-lg btn-block">Create PC</button>
      <div class="col-sm-4" ></div>
      <br><br>
      <button type="button" class="btn btn-secondary btn-lg btn-block">Create NPC</button>
      <div class="col-sm-4" ></div>
      <br><br>
-     <button type="button" class="btn btn-primary btn-lg btn-block">Start Roster!</button>
+     <button onclick="" type="button" class="btn btn-primary btn-lg btn-block">Start Roster!</button>
      <div class="col-sm-4" ></div>
     </div>
     <div class="col-lg-4"> </div>
