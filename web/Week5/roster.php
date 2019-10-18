@@ -40,7 +40,7 @@
             <br>
             <button type="button" class="btn btn-secondary btn-lg btn-block">Clear</button>
             <br>
-            <button onclick="window.location.href='encounters.html'" type="button" class="btn btn-secondary btn-lg btn-block">Roll Initiative</button>
+            <button onclick="window.location.href='encounters.php'" type="button" class="btn btn-secondary btn-lg btn-block">Roll Initiative</button>
 
         </div>
 

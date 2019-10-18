@@ -29,10 +29,10 @@
   <div class="row"></div>
  <div class="col-sm-4" ></div>
     <div class="col-lg-4">
-     <button onclick="window.location.href='newCharacter.html'" type="button" class="btn btn-secondary btn-lg btn-block">Create PC</button>
+     <button onclick="window.location.href='newCharacter.php'" type="button" class="btn btn-secondary btn-lg btn-block">Create PC</button>
      <div class="col-sm-4" ></div>
      <br><br>
-     <button onclick="window.location.href='npcCreation.html'" type="button" class="btn btn-secondary btn-lg btn-block">Create NPC</button>
+     <button onclick="window.location.href='npcCreation.php'" type="button" class="btn btn-secondary btn-lg btn-block">Create NPC</button>
      <div class="col-sm-4" ></div>
      <br><br>
      <button onclick="window.location.href='roster.php'" type="button" class="btn btn-primary btn-lg btn-block">Start Roster!</button>
