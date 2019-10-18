@@ -4,12 +4,11 @@
 <head>
     <title>Build your DND roster!</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet"> 
   
 
 </head>
@@ -36,7 +35,7 @@
             <br>
             <button type="button" class="btn btn-secondary btn-lg btn-block">Clear</button>
             <br>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Roll Initiative</button>
+            <button onclick="window.location.href='encounters.html'" type="button" class="btn btn-secondary btn-lg btn-block">Roll Initiative</button>
 
         </div>
 
@@ -57,7 +56,7 @@
 
 
     <div class="col-lg-1">
-        <button type="button" class="btn btn-secondary btn-sm btn-block">Home</button>
+        <button onclick="window.location.href='InitTracLanding.php'" type="button" class="btn btn-secondary btn-sm btn-block">Home</button>
     </div>
 </body>
 

@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>DnD Initiative Tracker</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -35,7 +35,7 @@
      <button onclick="window.location.href='npcCreation.html'" type="button" class="btn btn-secondary btn-lg btn-block">Create NPC</button>
      <div class="col-sm-4" ></div>
      <br><br>
-     <button onclick="" type="button" class="btn btn-primary btn-lg btn-block">Start Roster!</button>
+     <button onclick="window.location.href='roster.php'" type="button" class="btn btn-primary btn-lg btn-block">Start Roster!</button>
      <div class="col-sm-4" ></div>
     </div>
     <div class="col-lg-4"> </div>
