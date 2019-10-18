@@ -3,23 +3,61 @@
     $db = get_db();
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Initiative Tracker</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet"> 
+  
+  <style>
+  	.center{
+    	margin:auto;
+    }
+    #banner{
+    	letter-spacing: 15px;
+        font-family: 'MedievalSharp', cursive;
+        color: white;
+        
+    }
+    
+  
+</style>
+
+
 </head>
 <body>
-    <h1>Initiative Tracker</h1>
-    <h3>All player characters</h3>
-    <?php
-    foreach ($db->query('SELECT * FROM player_characters', PDO::FETCH_ASSOC) as $row)
-    {
-        echo '<p><b>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
-        'AC:' . $row['player_ac'] . ' -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
-    }
-    ?>
+
+<style>
+
+</style>
+
+
+<div class="jumbotron text-center" style="background-color:maroon">
+  <h1 id="banner">D&D Initiative Tracker</h1>
+</div>
+  
+<div class="container">
+  <div class="row"></div>
+ <div class="col-sm-4" ></div>
+    <div class="col-lg-4">
+     <button type="button" class="btn btn-secondary btn-lg btn-block">Create PC</button>
+     <div class="col-sm-4" ></div>
+     <br><br>
+     <button type="button" class="btn btn-secondary btn-lg btn-block">Create NPC</button>
+     <div class="col-sm-4" ></div>
+     <br><br>
+     <button type="button" class="btn btn-primary btn-lg btn-block">Start Roster!</button>
+     <div class="col-sm-4" ></div>
+    </div>
+    <div class="col-lg-4"> </div>
+  </div>
+</div>
 
 </body>
 </html>
