@@ -1,5 +1,5 @@
 <?php
-    require "../Week5/databaseConnection.php";
+    require "databaseConnection.php";
     $db = get_db();
 ?>
 
