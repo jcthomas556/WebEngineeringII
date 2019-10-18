@@ -1,5 +1,5 @@
 <?php
-    require __DIR__."../databaseConnection.php";
+    require "../Week5/databaseConnection.php";
     $db = get_db();
 ?>
 
