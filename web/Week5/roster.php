@@ -31,11 +31,11 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
 
              <?php
-                 foreach ($db->query('SELECT * FROM player_characters', PDO::FETCH_ASSOC) as $row)
-                 {
-                     echo '<p><b>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
-                     'AC:' . $row['player_ac'] . ' -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
-                 }
+            //      foreach ($db->query('SELECT * FROM player_characters', PDO::FETCH_ASSOC) as $row)
+            //      {
+            //          echo '<p><b>' . $row['player_fname'] . ' ' . $row['player_lname'] . 
+            //          'AC:' . $row['player_ac'] . ' -- ' . $row['player_race'] . ', ' . $row['player_class'] . '</p>';
+            //      }
              ?>
             
         </div>
