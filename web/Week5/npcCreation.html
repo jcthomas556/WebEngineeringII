@@ -39,26 +39,26 @@
      <h2 style="text-align:center">New NPC Character</h2>
   <form action="/action_page.php">
     <div class="form-group">
-      <input type="email" class="form-control" id="fname" placeholder="First Name" name="fname">
+      <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" id="lname" placeholder="Last Name" name="lname">
+      <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" id="player_ac" placeholder="AC" name="npc_ac">
+      <input type="int" class="form-control" id="player_ac" placeholder="AC" name="npc_ac" required>
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" id="init_bonus" placeholder="Initiative Bonus" name="npc_init_bonus">
+      <input type="text" class="form-control" id="init_bonus" placeholder="Initiative Bonus" name="npc_init_bonus" required>
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" id="classification" placeholder="Classification, Ex. Humanoid, Monstosity" name="classification">
+      <input type="text" class="form-control" id="classification" placeholder="Classification, Ex. Humanoid, Monstosity" name="classification">
     </div>
     
     <button type="submit" class="btn btn-default btn-block">Submit</button>
   </form>
      <div class="col-sm-4" ></div>
      <br><br>
-     <button class="btn btn-default btn-block">Home</button>
+     <button onclick="window.location.href='InitTracLanding.php'" class="btn btn-default btn-block">Home</button>
 
   
 </div>
