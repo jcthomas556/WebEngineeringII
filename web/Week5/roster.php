@@ -51,7 +51,7 @@
                     }
                     foreach ($db->query("SELECT * FROM npc_characters WHERE npc_lname = '$name'", PDO::FETCH_ASSOC) as $row)
                     {
-                        echo '<p>' . $row['npc_fname'] . ' ' . $row['npc_lname'] . ' - The ' $row['npc_race_type'] . ' AC of ' . $row['npc_ac'] . ' initiative of ' . $row['npc_init_bonus'] . '</p>';
+                        echo '<p>' . $row['npc_fname'] . ' ' . $row['npc_lname'] . ' - The ' . $row['npc_race_type'] . ' AC of ' . $row['npc_ac'] . ' initiative of ' . $row['npc_init_bonus'] . '</p>';
                     }
                     //if search is blank, return all from everything!
                 }
