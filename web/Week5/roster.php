@@ -66,7 +66,7 @@
                     {
                         echo '<p>' . $row['npc_fname'] . ' ' . $row['npc_lname'] . ' - The ' . $row['npc_race_type'] . ': AC of ' . $row['npc_ac'] . ' initiative of ' . $row['npc_init_bonus'] . '<br></p>';
                     }
-                    //if search is blank, return all from everything!
+                    
                 }
             }
             ?>
@@ -82,6 +82,7 @@
             <button type="button" class="btn btn-secondary btn-lg btn-block">Clear</button>
             <br>
             <button onclick="window.location.href='encounters.php'" type="button" class="btn btn-secondary btn-lg btn-block">Roll Initiative</button>
+            <br>
 
         </div>
 
