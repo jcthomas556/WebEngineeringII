@@ -36,12 +36,13 @@
             <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $name = htmlspecialchars(trim($_POST['name']));
-        echo 'HELLO' . $name;
-                    // foreach ($db->query("SELECT * FROM player_characters WHERE fname='$name'", PDO::FETCH_ASSOC) as $row)
-                    // {
-                    //     echo '<p>' . $row['fname'] . ' ' . $row['lname'] . '</p>';
-                    //     //echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
-                    // }
+        
+                    foreach ($db->query("SELECT * FROM player_characters WHERE fname='$name'", PDO::FETCH_ASSOC) as $row)
+                    {
+                   //     echo '<p>' . $row['fname'] . ' ' . $row['lname'] . '</p>';
+                   echo 'HELLO' . $name;  
+                   //echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
+                    }
                 }
             ?>
             
