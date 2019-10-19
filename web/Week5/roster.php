@@ -39,8 +39,8 @@
         
                     foreach ($db->query("SELECT * FROM player_characters WHERE player_fname='$name'", PDO::FETCH_ASSOC) as $row)
                     {
-                        echo $name;
-                        echo '<p>' . $row['fname'] . ' ' . $row['lname'] . '</p>';
+                        //echo $name;
+                        echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname'] . '</p>';
                         //echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
                     }
                 }
