@@ -28,13 +28,13 @@
     <br><br><br>
     <div class="container">
         <div class="col-lg-4"  >
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
-                <input type="submit" value="query" />
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" >
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" name="name">
+                <input type="submit" value="Search" />
             </form>
             <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                $name = htmlspecialchars(trim($_POST['search']));
+                $name = htmlspecialchars(trim($_POST['name']));
         
                     foreach ($db->query("SELECT * FROM player_characters WHERE fname='$name'", PDO::FETCH_ASSOC) as $row)
                     {
