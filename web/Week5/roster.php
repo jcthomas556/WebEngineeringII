@@ -28,20 +28,20 @@
     <br><br><br>
     <div class="container">
         <div class="col-lg-4"  >
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
-
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="search">
+                <input type="submit" value="query" />
+            </form>
             <?php
-            
-    //             $id = htmlspecialchars(trim($_GET['id']));
-    // ​
-    //             $stmt = $db->prepare('SELECT * FROM scriptures WHERE id=:id LIMIT 1');
-    //             $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-    //             $stmt->execute();
-    // ​
-    //             $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    // ​
-    //             echo '<p><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - "' . $row['content'] . '"</p>';
-            
+                if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                $name = htmlspecialchars(trim($_POST['name']));
+        
+                    foreach ($db->query("SELECT * FROM player_characters WHERE fname='$name'", PDO::FETCH_ASSOC) as $row)
+                    {
+                        echo '<p>' . $row['fname'] . ' ' $row['lname'] . '</p>';
+                        //echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
+                    }
+                }
             ?>
             
         </div>
