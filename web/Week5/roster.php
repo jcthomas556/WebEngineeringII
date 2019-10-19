@@ -14,7 +14,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet"> 
-  
+  <link rel="stylesheet" href="styling.css" />
+
 
 </head>
 
@@ -35,12 +36,12 @@
             <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $name = htmlspecialchars(trim($_POST['name']));
-        
-                    foreach ($db->query("SELECT * FROM player_characters WHERE fname='$name'", PDO::FETCH_ASSOC) as $row)
-                    {
-                        echo '<p>' . $row['fname'] . ' ' . $row['lname'] . '</p>';
-                        //echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
-                    }
+        echo 'HELLO' . $name;
+                    // foreach ($db->query("SELECT * FROM player_characters WHERE fname='$name'", PDO::FETCH_ASSOC) as $row)
+                    // {
+                    //     echo '<p>' . $row['fname'] . ' ' . $row['lname'] . '</p>';
+                    //     //echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
+                    // }
                 }
             ?>
             

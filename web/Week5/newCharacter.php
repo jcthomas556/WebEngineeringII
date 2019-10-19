@@ -13,20 +13,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styling.css" />
+
   
-  <style>
-  	.centert{
-    	margin:auto;
-    }
-    #banner{
-    	letter-spacing: 15px;
-        font-family: 'MedievalSharp', cursive;
-        color: white;
-        
-    }
-    
-  
-</style>
+
 
 
 </head>
