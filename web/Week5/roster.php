@@ -36,22 +36,24 @@
             <?php
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $name = htmlspecialchars(trim($_POST['name']));
+
+                var_dump($name);
         
                     foreach ($db->query("SELECT * FROM player_characters WHERE player_fname='$name'", PDO::FETCH_ASSOC) as $row)
                     {
-                        echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname'] . ' - The '. $row['player_race'] . ', '. $row['player_class'] . ' AC of ' . $row['player_ac'] . ' initiative of ' . $row['player_init_bonus'] .  '</p>';
+                        echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname'] . ' - The '. $row['player_race'] . ', '. $row['player_class'] . ': AC of ' . $row['player_ac'] . ' initiative of ' . $row['player_init_bonus'] .  '<br></p>';
                     }
                     foreach ($db->query("SELECT * FROM npc_characters WHERE npc_fname = '$name'", PDO::FETCH_ASSOC) as $row)
                     {
-                        echo '<p>' . $row['npc_fname'] . ' ' . $row['npc_lname'] . ' - The '. $row['npc_race_type'] . ' AC of ' . $row['npc_ac'] . ' initiative of ' . $row['npc_init_bonus'] . '</p>';
+                        echo '<p>' . $row['npc_fname'] . ' ' . $row['npc_lname'] . ' - The '. $row['npc_race_type'] . ': AC of ' . $row['npc_ac'] . ' initiative of ' . $row['npc_init_bonus'] . '<br></p>';
                     }
                     foreach ($db->query("SELECT * FROM player_characters WHERE player_lname='$name'", PDO::FETCH_ASSOC) as $row)
                     {
-                        echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname']  .  ' - The '. $row['player_race'] . ', '. $row['player_class'] . ' AC of ' . $row['player_ac'] . ' initiative of ' . $row['player_init_bonus'] . '</p>';
+                        echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname']  .  ' - The '. $row['player_race'] . ', '. $row['player_class'] . ': AC of ' . $row['player_ac'] . ' initiative of ' . $row['player_init_bonus'] . '<br></p>';
                     }
                     foreach ($db->query("SELECT * FROM npc_characters WHERE npc_lname = '$name'", PDO::FETCH_ASSOC) as $row)
                     {
-                        echo '<p>' . $row['npc_fname'] . ' ' . $row['npc_lname'] . ' - The ' . $row['npc_race_type'] . ' AC of ' . $row['npc_ac'] . ' initiative of ' . $row['npc_init_bonus'] . '</p>';
+                        echo '<p>' . $row['npc_fname'] . ' ' . $row['npc_lname'] . ' - The ' . $row['npc_race_type'] . ': AC of ' . $row['npc_ac'] . ' initiative of ' . $row['npc_init_bonus'] . '<br></p>';
                     }
                     //if search is blank, return all from everything!
                 }
