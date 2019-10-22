@@ -45,8 +45,8 @@ function get_db() {
 <?php
         foreach($db->query("Select name FROM topic", PDO::FETCH_ASSOC) as $row){
             //echo "<label> " . $row['name'] . " <input type='checkbox' name='topic[]' value='" . $row['name'] . "'> </label>";
-            echo $row['name'];
-
+            //echo $row['name'];
+            vardump($row);
             // echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname'] . ' - The '. $row['player_race'] . ', '. $row['player_class'] . 
             // ': AC of ' . $row['player_ac'] . ' initiative of ' . $row['player_init_bonus'] .  '<br></p>';
         }
