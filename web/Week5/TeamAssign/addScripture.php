@@ -43,6 +43,12 @@ function get_db() {
 
         </textarea>
 <?php
+        
+        foreach ($db->query("SELECT * FROM scriptures", PDO::FETCH_ASSOC) as $row)
+        {
+            echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
+        }
+        
         foreach($db->query("Select name FROM topic", PDO::FETCH_ASSOC) as $row){
             //echo "<label> " . $row['name'] . " <input type='checkbox' name='topic[]' value='" . $row['name'] . "'> </label>";
             //echo $row['name'];
