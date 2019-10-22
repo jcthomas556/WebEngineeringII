@@ -79,3 +79,21 @@ SET image_id =
 WHERE
    player_fname = 'Saul';
 
+SELECT * FROM npc_characters WHERE npc_fname = '$name'
+
+_________________________________ WEEK 6
+
+
+ALTER TABLE player_characters
+ADD COLUMN date_entered timestamp;
+
+ALTER TABLE npc_characters
+ADD COLUMN date_entered timestamp;
+
+ALTER TABLE player_characters
+Collumn date_entered set default CURRENT_DATE;
+
+ALTER TABLE npc_characters
+Collumn date_entered set default CURRENT_DATE;
+
+make both collumns not null
