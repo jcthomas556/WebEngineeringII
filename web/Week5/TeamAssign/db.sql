@@ -36,3 +36,28 @@ INSERT INTO scriptures (book,chapter,verse,content) VALUES
 , 'He is the light and the life of the world; yea, a light that is endless, that can never be darkened; yea, and also a life which is endless, that there can be no more death.'
 );
 
+CREATE TABLE topic (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(30) NOT NULL   
+);
+
+CREATE TABLE links (
+    id SERIAL PRIMARY KEY,
+    topic int NOT NULL references topic(id),
+    scripture INT NOT NULL references scriptures(id)    
+);
+
+insert INTO topic (name) VALUES(
+    'Faith'
+);
+
+insert INTO topic (name) VALUES(
+    'Sacrifice'
+);
+
+insert INTO topic (name) VALUES(
+    'Charity'
+);
+
+
+

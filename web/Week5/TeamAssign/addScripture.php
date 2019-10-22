@@ -35,8 +35,8 @@ try {
 
         </textarea>
 <?php
-        foreach($db->query("Select name FROM topic") as $row){
-            echo "<label> " . $row['name'] . " <input type='checkbox' name='topic[]' value='" . $row['name'] . "'> </label>"
+        foreach($db->query('Select name FROM topic', PDO::FETCH_ASSOC) as $row){
+            echo "<label> " . $row['name'] . " <input type='checkbox' name='topic[]' value='" . $row['name'] . "'> </label>";
         }
 
 ?>
