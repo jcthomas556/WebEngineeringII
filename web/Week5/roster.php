@@ -34,27 +34,29 @@
                 <input type="submit" value="Search" />
             </form>
             <?php
+                foreach($db->query(
+                    "SELECT
+                        player_fname,
+                        player_lname,
+                        date_entered
+                    FROM
+                        player_characters
+                    UNION
+                    SELECT
+                        npc_fname,
+                        npc_lname,
+                        date_entered
+                    FROM
+                        npc_characters
+                    ORDER BY date_entered LIMIT 5", PDO::FETCH_ASSOC) as $holder)
+                    {
+                        echo '<p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p>';
+                    }
+
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $name = htmlspecialchars(trim($_POST['name']));
 
-                foreach($db->query(
-                "SELECT
-                    player_fname,
-                    player_lname,
-                    date_entered
-                 FROM
-                    player_characters
-                 UNION
-                 SELECT
-                    npc_fname,
-                    npc_lname,
-                    date_entered
-                 FROM
-                    npc_characters
-                 ORDER BY date_entered LIMIT 5", PDO::FETCH_ASSOC) as $holder)
-                 {
-                    echo '<p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p>';
-                 }
+                
 
                 if($name == ""){
                     foreach ($db->query("SELECT * FROM player_characters", PDO::FETCH_ASSOC) as $row)
