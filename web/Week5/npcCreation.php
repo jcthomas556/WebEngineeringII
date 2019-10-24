@@ -59,7 +59,7 @@
       $init_bonus = $_POST["init_bonus"];
       $classification = $_POST["classification"];
 
-
+var_dump();
       
       $db->query(
         "INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, npc_init_bonus, npc_race_type) 
@@ -70,6 +70,8 @@
           $init_bonus,
           '$classification')" 
         );
+
+   
 
 
       }
