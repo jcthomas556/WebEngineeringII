@@ -59,9 +59,6 @@
       $init_bonus = $_POST["init_bonus"];
       $classification = $_POST["classification"];
 
-      
-      var_dump($init_bonus);
-
 
       
       $db->query(
