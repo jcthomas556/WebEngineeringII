@@ -39,7 +39,7 @@
       <input type="text" class="form-control" id="npc_ac" placeholder="AC" name="npc_ac" required>
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" id="init_bonus" placeholder="Player Initiative Bonus" name="init_bonus" required>
+      <input type="text" class="form-control" id="init_bonus" placeholder="Initiative Bonus" name="init_bonus" required>
     </div>
     <div class="form-group">
       <input type="text" class="form-control" id="classification" placeholder="classification, Ex. Humanoid, Monstosity" name="classification">
