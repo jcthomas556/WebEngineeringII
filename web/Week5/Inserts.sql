@@ -94,7 +94,7 @@ ALTER TABLE player_characters
 ALTER date_entered SET DEFAULT now();
 
 ALTER TABLE npc_characters
-ALTER date_entered set default CURRENT_DATE;
+ALTER date_entered set default now();
 
 UPDATE player_characters 
 SET date_entered = now();
@@ -154,3 +154,10 @@ VALUES (
     'Lady'
     );
 
+INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, npc_init_bonus, npc_race_type) 
+        VALUES (
+          'Tina',
+          'Belcher',
+          13,
+          3,
+          'Child');
