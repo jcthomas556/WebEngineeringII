@@ -59,6 +59,8 @@
       $init_bonus = $_POST["init_bonus"];
       $classification = $_POST["classification"];
 
+      var_dump($fname);
+
       
       $db->query(
         "INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, npc_init_bonus, npc_race_type) 
@@ -71,6 +73,7 @@
         );
        }
   ?>
+
     <div class="col-sm-4" ></div>
      <br><br>
      <button onclick="window.location.href='InitTracLanding.php'" class="btn btn-default btn-block">Home</button>
