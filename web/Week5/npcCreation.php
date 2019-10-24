@@ -69,7 +69,7 @@
     //       $init_bonus,
     //       '$classification')" 
     //     );
-    //   }
+       }
   ?>
     <div class="col-sm-4" ></div>
      <br><br>
