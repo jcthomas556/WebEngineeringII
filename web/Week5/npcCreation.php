@@ -51,32 +51,25 @@
 
   <?php
     
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    //$name = htmlspecialchars(trim($_POST['name']));
-      $fname = $_POST["fname"];
-      $lname = $_POST["lname"];
-      $player_ac = $_POST["npc_ac"];
-      $init_bonus = $_POST["init_bonus"];
-      $classification = $_POST["classification"];
-
+    // if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // //$name = htmlspecialchars(trim($_POST['name']));
+    //   $fname = $_POST["fname"];
+    //   $lname = $_POST["lname"];
+    //   $player_ac = $_POST["npc_ac"];
+    //   $init_bonus = $_POST["init_bonus"];
+    //   $classification = $_POST["classification"];
 
       
-      $db->query(
-        "INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, npc_init_bonus, npc_race_type) 
-        VALUES (
-          '$fname',
-          '$lname',
-          $player_ac,
-          $init_bonus,
-          '$classification')" 
-        );
-
-   
-
-
-      }
-
-
+    //   $db->query(
+    //     "INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, npc_init_bonus, npc_race_type) 
+    //     VALUES (
+    //       '$fname',
+    //       '$lname',
+    //       $player_ac,
+    //       $init_bonus,
+    //       '$classification')" 
+    //     );
+    //   }
   ?>
     <div class="col-sm-4" ></div>
      <br><br>
