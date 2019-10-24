@@ -119,25 +119,38 @@ WHERE date_entered = current_date;
 --- beautiful union and sort of time stamps
 
 SELECT
+   player_fname,
+   player_lname,
    date_entered
 FROM
    player_characters
 UNION
 SELECT
+   npc_fname,
+   npc_lname,
    date_entered
 FROM
    npc_characters
-ORDER BY date_entered LIMIT 5;
+ORDER BY date_entered DESC LIMIT 15;
 
-SELECT * from player_characters , npc_characters
-WHERE date_entered 
-IN (SELECT
-   date_entered
-FROM
-   player_characters
-UNION
-SELECT
-   date_entered
-FROM
-   npc_characters
-ORDER BY date_entered LIMIT 5);
+SELECT player_character.player_fname, npc_characters.npc_fname, a.city FROM player_characters
+JOIN address AS a ON p.id = a.person_id
+WHERE a.zip = '97299';
+
+SELECT p.*, a.street, a.city FROM persons AS p
+JOIN address AS a ON p.id = a.person_id
+WHERE a.zip = '97299';
+
+
+
+
+INSERT into player_characters (player_fname, player_lname, player_ac, player_init_bonus, player_race, player_class) 
+VALUES (
+    'Leila',
+    'LaLoo',
+    '14',
+    '3',
+    'Human',
+    'Lady'
+    );
+

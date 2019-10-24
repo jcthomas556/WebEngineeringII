@@ -67,6 +67,7 @@
       $class = $_POST["class"];
 
 
+      
       $db->query(
         "INSERT INTO player_characters (player_fname, player_lname, player_ac, player_init_bonus, player_race, player_class) 
         VALUES (
@@ -79,7 +80,7 @@
         );
 
 
-        }
+      }
 
 
   ?>

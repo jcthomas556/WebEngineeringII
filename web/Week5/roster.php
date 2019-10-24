@@ -48,7 +48,7 @@
                         date_entered
                     FROM
                         npc_characters
-                    ORDER BY date_entered LIMIT 5", PDO::FETCH_ASSOC) as $holder)
+                    ORDER BY date_entered DESC LIMIT 15", PDO::FETCH_ASSOC) as $holder)
                     {
                         echo '<p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p>';
                     }
