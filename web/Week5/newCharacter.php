@@ -75,11 +75,11 @@
           $player_ac,
           $init_bonus,
           '$race',
-          '$class'
-        )"
+          '$class')" 
+        );
 
 
-
+        }
 
 
   ?>
