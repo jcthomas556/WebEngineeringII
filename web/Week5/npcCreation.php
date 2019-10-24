@@ -59,11 +59,11 @@
       $init_bonus = $_POST["init_bonus"];
       $classification = $_POST["classification"];
 
-      // var_dump($fname);
-      // var_dump($lname);
-      // var_dump($player_ac);
-      // var_dump($init_bonus);
-      // var_dump($classification);
+      var_dump($fname);
+      var_dump($lname);
+      var_dump($player_ac);
+      var_dump($init_bonus);
+      var_dump($classification);
 
       
       $db->query(
