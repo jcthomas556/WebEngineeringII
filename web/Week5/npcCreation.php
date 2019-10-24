@@ -39,10 +39,10 @@
       <input type="int" class="form-control" id="npc_ac" placeholder="AC" name="npc_ac" required>
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" id="init_bonus" placeholder="Initiative Bonus" name="npc_init_bonus" required>
+      <input type="text" class="form-control" id="init_bonus" placeholder="init_bonus" name="npc_init_bonus" required>
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" id="classification" placeholder="Classification, Ex. Humanoid, Monstosity" name="classification">
+      <input type="text" class="form-control" id="classification" placeholder="classification, Ex. Humanoid, Monstosity" name="classification">
     </div>
     
     <button type="submit" class="btn btn-default btn-block">Submit</button>
@@ -59,7 +59,7 @@
       $init_bonus = $_POST["init_bonus"];
       $classification = $_POST["classification"];
 
-var_dump();
+
       
       $db->query(
         "INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, npc_init_bonus, npc_race_type) 
