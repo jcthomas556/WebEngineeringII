@@ -39,7 +39,7 @@
       <input type="text" class="form-control" id="npc_ac" placeholder="AC" name="npc_ac" required>
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" id="init_bonus" placeholder="Initiative Bonus" name="init_bonus" required>
+      <input type="text" class="form-control" id="init_bonus" placeholder="Player Initiative Bonus" name="init_bonus" required>
     </div>
     <div class="form-group">
       <input type="text" class="form-control" id="classification" placeholder="classification, Ex. Humanoid, Monstosity" name="classification">
@@ -59,11 +59,9 @@
       $init_bonus = $_POST["init_bonus"];
       $classification = $_POST["classification"];
 
-      var_dump($fname);
-      var_dump($lname);
-      var_dump($player_ac);
+      
       var_dump($init_bonus);
-      var_dump($classification);
+
 
       
       $db->query(
