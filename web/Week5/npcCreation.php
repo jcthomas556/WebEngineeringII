@@ -62,7 +62,7 @@
 
       
       $db->query(
-        "INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, player_init_bonus, npc_race_type) 
+        "INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, npc_init_bonus, npc_race_type) 
         VALUES (
           '$fname',
           '$lname',
