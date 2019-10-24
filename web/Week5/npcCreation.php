@@ -51,13 +51,13 @@
 
   <?php
     
-    // if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // //$name = htmlspecialchars(trim($_POST['name']));
-    //   $fname = $_POST["fname"];
-    //   $lname = $_POST["lname"];
-    //   $player_ac = $_POST["npc_ac"];
-    //   $init_bonus = $_POST["init_bonus"];
-    //   $classification = $_POST["classification"];
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //$name = htmlspecialchars(trim($_POST['name']));
+      $fname = $_POST["fname"];
+      $lname = $_POST["lname"];
+      $player_ac = $_POST["npc_ac"];
+      $init_bonus = $_POST["init_bonus"];
+      $classification = $_POST["classification"];
 
       
     //   $db->query(
