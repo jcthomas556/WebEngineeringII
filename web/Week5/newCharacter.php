@@ -32,7 +32,7 @@
  <div class="col-sm-4" ></div>
     <div class="col-lg-4">
      <h2 style="text-align:center">Create Player Character</h2>
-  <form action="/action_page.php">
+  <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     <div class="form-group">
       <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
     </div>
@@ -53,6 +53,37 @@
     </div>
     <button type="submit" class="btn btn-default btn-block">Submit</button>
   </form>
+
+
+  <?php
+    
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    //$name = htmlspecialchars(trim($_POST['name']));
+      $fname = $_POST["fname"];
+      $lname = $_POST["lname"];
+      $player_ac = $_POST["player_ac"];
+      $init_bonus = $_POST["init_bonus"];
+      $race = $_POST["race"];
+      $class = $_POST["class"];
+
+
+      $db->query(
+        "INSERT INTO player_characters (player_fname, player_lname, player_ac, player_init_bonus, player_race, player_class) 
+        VALUES (
+          '$fname',
+          '$lname',
+          $player_ac,
+          $init_bonus,
+          '$race',
+          '$class'
+        )"
+
+
+
+
+
+  ?>
+
      <div class="col-sm-4" ></div>
      <br><br>
      <button onclick="window.location.href='InitTracLanding.php'" class="btn btn-default btn-block">Home</button>
