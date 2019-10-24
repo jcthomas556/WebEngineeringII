@@ -91,9 +91,53 @@ ALTER TABLE npc_characters
 ADD COLUMN date_entered timestamp;
 
 ALTER TABLE player_characters
-Collumn date_entered set default CURRENT_DATE;
+ALTER date_entered SET DEFAULT now();
 
 ALTER TABLE npc_characters
-Collumn date_entered set default CURRENT_DATE;
+ALTER date_entered set default CURRENT_DATE;
 
-make both collumns not null
+UPDATE player_characters 
+SET date_entered = now();
+
+UPDATE npc_characters 
+SET date_entered = now();
+
+ALTER TABLE player_characters
+ALTER COLUMN date_entered SET NOT NULL;
+
+ALTER TABLE npc_characters
+ALTER COLUMN date_entered SET NOT NULL;
+
+DELETE FROM player_characters
+WHERE date_entered = current_date;
+
+DELETE FROM npc_characters
+WHERE date_entered = current_date;
+
+
+---------------------- join for date filtering
+--- beautiful union and sort of time stamps
+
+SELECT
+   date_entered
+FROM
+   player_characters
+UNION
+SELECT
+   date_entered
+FROM
+   npc_characters
+ORDER BY date_entered LIMIT 5;
+
+SELECT * from player_characters , npc_characters
+WHERE date_entered 
+IN (SELECT
+   date_entered
+FROM
+   player_characters
+UNION
+SELECT
+   date_entered
+FROM
+   npc_characters
+ORDER BY date_entered LIMIT 5);

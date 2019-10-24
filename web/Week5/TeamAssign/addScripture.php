@@ -35,49 +35,92 @@ function get_db() {
     <title>Insert</title>
 </head>
 <body>
-    <form>  
+    <form action="addScripture.php" method="POST">  
         <input type="text" name="book" id="book">
         <input type="text" name="chapter" id="chapter">
         <input type="text" name="verse" id="verse">
         <textarea name="content" id="content">  
+        
 
         </textarea>
 <?php
         
-        foreach ($db->query("SELECT * FROM scriptures", PDO::FETCH_ASSOC) as $row)
-        {
-            echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
-        }
+     
         
         foreach($db->query("Select name FROM topic", PDO::FETCH_ASSOC) as $row){
-            //echo "<label> " . $row['name'] . " <input type='checkbox' name='topic[]' value='" . $row['name'] . "'> </label>";
-            //echo $row['name'];
-            vardump($row);
-            // echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname'] . ' - The '. $row['player_race'] . ', '. $row['player_class'] . 
-            // ': AC of ' . $row['player_ac'] . ' initiative of ' . $row['player_init_bonus'] .  '<br></p>';
+            echo "<label> " . $row['name'] . " <input type='checkbox' name='topic[]' value='" . $row['name'] . "'> </label>";
         }
 
 ?>
-
-        <input type="submit" value="submit">
+        <input type="checkbox" name="newTopic" id="newTopic">
+        <input type="text" name="topicText" id="topicText">
+        <input type="submit" value="submit" >
 
     </form>
-
-    <?php
+<?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $book = $_POST["book"];
+        $chapter = $_POST["chapter"];
+        $verse = $_POST["verse"];
+        $content = $_POST["content"];
+        $topic = $_POST["topic"];
+        $newTopic = $_POST["newTopic"];
         
-        foreach ($db->query("SELECT * FROM scriptures", PDO::FETCH_ASSOC) as $row)
-        {
-            echo '<p><a href="scripture.php?id=' . $row['id'] . '"><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b></a></p>';
+
+
+        $db->query("INSERT INTO scriptures (book, chapter, verse, content) VALUES
+        ( '$book'
+        , $chapter
+        , $verse
+        , '$content'
+        )");
+
+
+        if(isset($_POST['newTopic'])){
+            $topicText = $_POST["topicText"];
+
+            if(trim($topicText) != "")
+            {
+                $db->query("INSERT INTO topic (name) VALUES ($topicText)");
+
+
+                $db->query("INSERT INTO links (topic, scripture) VALUES
+                ( currval('topic_id_seq')
+                , currval('scriptures_id_seq'))"
+                );
+
+            }
+            
         }
-        
-        // foreach($db->query("Select name FROM topic", PDO::FETCH_ASSOC) as $row){
-        //     //echo "<label> " . $row['name'] . " <input type='checkbox' name='topic[]' value='" . $row['name'] . "'> </label>";
-        //     //echo $row['name'];
-        //     vardump($row);
-        //     // echo '<p>' . $row['player_fname'] . ' ' . $row['player_lname'] . ' - The '. $row['player_race'] . ', '. $row['player_class'] . 
-        //     // ': AC of ' . $row['player_ac'] . ' initiative of ' . $row['player_init_bonus'] .  '<br></p>';
-        // }
 
+        
+
+
+
+        foreach($topic as $checked){
+            $db->query("INSERT INTO links (topic, scripture) VALUES
+                ((SELECT id FROM topic WHERE name = '$checked')
+                , currval('scriptures_id_seq'))"
+                );
+        }
+
+
+
+    }
+
+    foreach($db->query('SELECT * FROM scriptures', PDO::FETCH_ASSOC) as $row)
+    {
+        echo '<p><b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - "' . $row['content'];
+
+        foreach($db->query('SELECT t.name FROM topic t, links l
+        WHERE t.id = l.topic AND l.scripture = ' . $row['id'], PDO::FETCH_ASSOC) as $topic ){
+            echo ' ' . $topic['name'] ;
+        }
+        echo '</p>';
+
+    }
+        
 ?>
+   
 </body>
 </html>
