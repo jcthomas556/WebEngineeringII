@@ -92,16 +92,30 @@
           '$class')" 
         );
 
-      if($db->query(
-        "SELECT player_fname 
-        FROM player_characters
-        WHERE player_fname = '$fname'", PDO::FETCH_ASSOC) as $result)
-        {
-          echo '<p> success </p>';
-        }
+      // foreach($db->query(
+      //   "SELECT player_fname 
+      //   FROM player_characters
+      //   WHERE player_fname = '$fname'", PDO::FETCH_ASSOC) as $result)
+      //   {
+      //     echo '<p> success </p>';
+      //   }
+      
+      $result = pg_query_params ( $dbconn,
+        'SELECT FROM player_fname
+        WHERE player_fname = '$fname'',
+        array ( $question_id )
+      );
+
+
+      if ($result === false) {
+          print pg_last_error($dbconn);
+      } else {
+          print 'everything was ok';
+      }
       
 
       }
+
 
 
   ?>
