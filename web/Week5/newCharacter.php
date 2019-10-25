@@ -109,7 +109,9 @@
 
     if ($result === false) {
         echo pg_last_error($dbconn);
-        echo 'it failed';
+        echo '<script language="javascript">';
+      echo 'alert("It failed")';
+      echo '</script>';
     } else {
       echo '<script language="javascript">';
       echo 'alert("Character Entered")';
