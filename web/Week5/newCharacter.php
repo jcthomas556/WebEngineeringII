@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
       <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" style="text-transform: capitalize;" id="lname" placeholder="Last Name" name="lname" required>
+      <input type="text" class="form-control, fname" style="text-transform: capitalize;" id="lname" placeholder="Last Name" name="lname" required>
     </div>
     <div class="form-group">
       <input type="text" class="form-control" id="player_ac" placeholder="Player AC" name="player_ac" required>
