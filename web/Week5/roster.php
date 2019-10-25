@@ -30,7 +30,7 @@
     <div class="container">
         <div class="col-lg-4"  >
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" >
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" name="name">
+                <input class="form-control mr-sm-2" style="width:150px" type="text" placeholder="Search" name="name">
                 <input type="submit" value="Search" />
             </form>
             <?php
