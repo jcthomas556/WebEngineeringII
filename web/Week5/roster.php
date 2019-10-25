@@ -64,7 +64,9 @@
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $name = htmlspecialchars(trim($_POST['name']));
 
-                echo 'deleteDefault()';
+                echo '<script type="text/javascript">',
+                'deleteDefault();',
+                '</script>';
 
                 if($name == ""){
                     // foreach ($db->query("SELECT * FROM player_characters", PDO::FETCH_ASSOC) as $row)
