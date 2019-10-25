@@ -20,7 +20,7 @@
   <script type="text/javascript">
     jQuery.noConflict();
     jQuery(document).ready(function($) {
-        $('.fname').keyup(function(event) {
+        $('.form-control').keyup(function(event) {
             var textBox = event.target;
             var start = textBox.selectionStart;
             var end = textBox.selectionEnd;
@@ -51,7 +51,7 @@
 
 
 
-      <input type="text"  id="fname" placeholder="First Name" name="fname" required>
+      <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
     </div>
     <div class="form-group">
       <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
