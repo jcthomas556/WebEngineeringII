@@ -15,6 +15,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styling.css" />
+  <script src="scriptCode.js"></script>
 
 
 </head>
@@ -31,7 +32,9 @@
         <div class="col-lg-4"  >
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" >
                 <input class="form-control mr-sm-2" style="width:150px" type="text" placeholder="Search" name="name">
-                <input type="submit" value="Search" />
+                <input type="submit" 
+                    style="position: absolute; left: -9999px; width: 1px; height: 1px;"
+                    tabindex="-1" />
             </form>
             <?php
                 foreach($db->query(
