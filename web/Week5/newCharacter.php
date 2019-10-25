@@ -111,7 +111,9 @@
         echo pg_last_error($dbconn);
         echo 'it failed';
     } else {
-        print 'everything was ok';
+      echo '<script language="javascript">';
+      echo 'alert("Character Entered")';
+      echo '</script>';
     }
     
 
