@@ -72,8 +72,13 @@
       $init_bonus = $_POST["init_bonus"];
       $race = $_POST["race"];
       $class = $_POST["class"];
-      
-      if($db->query(
+
+      $checker = $db->query("select count(*) from player_characters");
+      vardump($checker);
+
+  
+
+      $db->query(
         "INSERT INTO player_characters (player_fname, player_lname, player_ac, player_init_bonus, player_race, player_class) 
         VALUES (
           '$fname',
@@ -83,12 +88,6 @@
           '$race',
           '$class')" 
         );
-      ){
-        echo "success";
-      }
-      else{
-        echo "fail"
-      }
 
 
       }
