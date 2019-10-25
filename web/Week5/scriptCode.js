@@ -12,6 +12,8 @@
   });
 
 function deleteDefault(){
-    var elmnt = document.getElementById("defaultList");
-    elmnt.remove();
+    for(i = 0; i < 8; i++) {
+        var elmnt = document.getElementById("defaultList");
+        elmnt.remove();
+    }
 }
