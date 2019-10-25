@@ -35,7 +35,12 @@
      <h2 style="text-align:center">Create Player Character</h2>
   <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     <div class="form-group">
-      <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
+
+
+
+
+
+      <input type="text" class="form-control"  style="text-transform: capitalize;" id="fname" placeholder="First Name" name="fname" required>
     </div>
     <div class="form-group">
       <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
@@ -95,18 +100,6 @@
 
 
 
-<script>
 
-  document.getElementById("fname").addEventListener("keypress", function(e) {
-    if(this.selectionStart == 0) {
-      // uppercase first letter
-      forceKeyPressUppercase(e);
-    } else {
-      // lowercase other letters
-      forceKeyPressLowercase(e);
-    }
-  }, false);
-
-</script>
 </body>
 </html>
