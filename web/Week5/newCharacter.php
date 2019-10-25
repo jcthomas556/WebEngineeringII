@@ -73,9 +73,9 @@
       $race = $_POST["race"];
       $class = $_POST["class"];
 
-      $checker = $db->query("SELECT count(*) FROM player_characters");
-      $result = $query->get_result();
-      var_dump($checker);
+      // $checker = $db->query("SELECT count(*) FROM player_characters");
+      // $result = $query->get_result();
+      // var_dump($checker);
 
 
 
@@ -91,6 +91,14 @@
           '$race',
           '$class')" 
         );
+
+      foreach($db->query(
+        "SELECT player_fname 
+        FROM player_characters
+        WHERE player_fname = '$fname';)"
+        )){
+          echo "success";
+        }
 
 
       }
