@@ -21,6 +21,7 @@
 
 </head>
 <body>
+<script src="scriptCode.js"></script>
 
 
 <div class="jumbotron text-center" style="background-color:maroon">
@@ -59,28 +60,18 @@
     
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //$name = htmlspecialchars(trim($_POST['name']));
+
       $fname = $_POST["fname"];
       $lname = $_POST["lname"];
       $player_ac = $_POST["player_ac"];
       $init_bonus = $_POST["init_bonus"];
       $race = $_POST["race"];
       $class = $_POST["class"];
-
-
-      ucfirst($fname);
-      var_dump($fname);
-      ucfirst($lname );
-      ucfirst($player_ac);
-      ucfirst($init_bonus);
-      ucfirst($race);
-      ucfirst($class);
-
-
       
       $db->query(
         "INSERT INTO player_characters (player_fname, player_lname, player_ac, player_init_bonus, player_race, player_class) 
         VALUES (
-          'ucfirst($fname)',
+          '$fname',
           '$lname',
           $player_ac,
           $init_bonus,
