@@ -96,7 +96,7 @@
         "SELECT player_fname 
         FROM player_characters
         WHERE player_fname = '$fname';)"
-        )){
+        ){
           echo "success";
         }
 
