@@ -103,7 +103,7 @@
       //   }
       
       $result = pg_query_params ( $dbconn,
-      'SELECT FROM player_fname
+      'SELECT player_fname FROM player_characters
       WHERE player_fname = $fname ',
       array ( $question_id )
     );
