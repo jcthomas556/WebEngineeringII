@@ -111,9 +111,7 @@
 
     if ($result === false) {
         echo pg_last_error($dbconn);
-        echo '<script language="javascript">';
-      echo 'alert("It failed")';
-      echo '</script>';
+        $result='<div class="alert alert-fail">Try Again</div>';
     } else {
       $result='<div class="alert alert-success">Character Created</div>';
     }
