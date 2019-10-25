@@ -92,7 +92,7 @@
           '$class')" 
         );
 
-      foreach($db->query(
+      if($db->query(
         "SELECT player_fname 
         FROM player_characters
         WHERE player_fname = '$fname'", PDO::FETCH_ASSOC) as $result)
