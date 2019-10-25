@@ -35,6 +35,7 @@
                 <input type="submit" 
                     style="position: absolute; left: -9999px; width: 1px; height: 1px;"
                     tabindex="-1" />
+                    <br>
             </form>
            
 
@@ -53,7 +54,7 @@
                         date_entered
                     FROM
                         npc_characters
-                    ORDER BY date_entered DESC LIMIT 15", PDO::FETCH_ASSOC) as $holder)
+                    ORDER BY date_entered DESC LIMIT 8", PDO::FETCH_ASSOC) as $holder)
                     {
                         
                         echo '<p class="lists">' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p> ';
