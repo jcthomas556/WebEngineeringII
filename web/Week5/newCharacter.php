@@ -73,8 +73,9 @@
       $race = $_POST["race"];
       $class = $_POST["class"];
 
-      $db->query("SELECT count(*) FROM player_characters", PDO::FETCH_ASSOC) as $checker;
-      echo $checker["count"];
+      $checker = $db->query("SELECT count(*) FROM player_characters");
+      $result = $query->get_result();
+      var_dump($result);
 
 
 
