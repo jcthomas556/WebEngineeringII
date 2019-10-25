@@ -75,7 +75,7 @@
 
       $checker = $db->query("SELECT count(*) FROM player_characters");
       $result = $query->get_result();
-      var_dump($result);
+      var_dump($checker);
 
 
 
