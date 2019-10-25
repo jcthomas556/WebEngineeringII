@@ -64,9 +64,7 @@
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $name = htmlspecialchars(trim($_POST['name']));
 
-                echo '<script type="text/javascript">',
-                'deleteDefault();',
-                '</script>';
+                
 
                 if($name == ""){
                     // foreach ($db->query("SELECT * FROM player_characters", PDO::FETCH_ASSOC) as $row)
@@ -81,7 +79,10 @@
                     //do nothing
                 }
                 else{
-        
+                    echo '<script type="text/javascript">',
+                    'deleteDefault();',
+                    '</script>';
+            
                     foreach ($db->query("SELECT * FROM player_characters WHERE player_fname='$name'", PDO::FETCH_ASSOC) as $row)
                     {
                         echo '<p class="lists">' . $row['player_fname'] . ' ' . $row['player_lname'] . ' - The '. $row['player_race'] . ', '. $row['player_class'] . ': AC of ' . $row['player_ac'] . ' initiative of ' . $row['player_init_bonus'] .  '<br></p>';
