@@ -14,6 +14,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styling.css" />
+  <script src="scriptCode.js"></script>
 
 </head>
 <body>
