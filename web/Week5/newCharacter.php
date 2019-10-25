@@ -109,6 +109,7 @@
 
     if ($result === false) {
         echo pg_last_error($dbconn);
+        echo 'it failed';
     } else {
         print 'everything was ok';
     }
