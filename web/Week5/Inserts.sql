@@ -81,6 +81,8 @@ WHERE
 
 SELECT * FROM npc_characters WHERE npc_fname = '$name'
 
+SELECT npc_fname FROM npc_characters WHERE npc_fname = '$name'
+
 _________________________________ WEEK 6
 
 
@@ -157,3 +159,12 @@ UNIQUE USING INDEX player_characters_player_fname;
 ALTER TABLE npc_characters 
 ADD CONSTRAINT unique_npc_characters_player_fname 
 UNIQUE USING INDEX npc_characters_player_fname;
+
+SELECT player_fname 
+FROM player_characters
+WHERE player_fname = 
+
+
+SELECT player_fname 
+FROM player_characters
+WHERE player_fname = 'Saul';

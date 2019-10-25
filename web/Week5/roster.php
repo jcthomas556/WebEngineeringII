@@ -55,8 +55,9 @@
                         npc_characters
                     ORDER BY date_entered DESC LIMIT 15", PDO::FETCH_ASSOC) as $holder)
                     {
-                        $list='<div class="alert alert-success"><p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p></div>';
-                        //echo '<p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p>';
+                        echo '<div class="lists">'
+                        echo '<p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p>';
+                        echo '</div>'
                     }
 
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -99,11 +100,7 @@
             }
             ?>
 
-            <div class="form-group">
-                <div class="col-sm-10 col-sm-offset-2">
-                    <?php echo $list; ?>    
-                </div>
-            </div>
+            
             
         </div>
 

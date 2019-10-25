@@ -8,3 +8,8 @@
   
 }
 
+.lists {
+  width: 100px;
+  height: 50px;
+  border: solid black 4px;
+  }
