@@ -57,14 +57,14 @@
                     ORDER BY date_entered DESC LIMIT 8", PDO::FETCH_ASSOC) as $holder)
                     {
                         
-                        echo '<p class="lists">' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p> ';
+                        echo '<p class="lists" id="defaultList" >' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p> ';
                         
                     }
 
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $name = htmlspecialchars(trim($_POST['name']));
 
-                
+                echo 'deleteDefault()';
 
                 if($name == ""){
                     // foreach ($db->query("SELECT * FROM player_characters", PDO::FETCH_ASSOC) as $row)

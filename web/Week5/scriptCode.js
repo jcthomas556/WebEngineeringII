@@ -11,3 +11,7 @@
       });
   });
 
+function deleteDefault(){
+    var elmnt = document.getElementById("defaultList");
+    elmnt.remove();
+}
