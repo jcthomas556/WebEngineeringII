@@ -92,5 +92,21 @@
   
 </div>
 
+
+
+
+<script>
+
+  document.getElementById("field_ucfirst").addEventListener("keypress", function(e) {
+    if(this.selectionStart == 0) {
+      // uppercase first letter
+      forceKeyPressUppercase(e);
+    } else {
+      // lowercase other letters
+      forceKeyPressLowercase(e);
+    }
+  }, false);
+
+</script>
 </body>
 </html>
