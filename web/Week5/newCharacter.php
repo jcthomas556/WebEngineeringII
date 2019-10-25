@@ -60,6 +60,8 @@
     <button type="submit" class="btn btn-default btn-block">Submit</button>
   </form>
 
+  
+
 
   <?php
     
@@ -113,9 +115,7 @@
       echo 'alert("It failed")';
       echo '</script>';
     } else {
-      echo '<script language="javascript">';
-      echo 'alert("Character Entered")';
-      echo '</script>';
+      $result='<div class="alert alert-success">Character Created</div>';
     }
     
 
@@ -124,6 +124,11 @@
 
 
   ?>
+  <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <?php echo $result; ?>    
+        </div>
+    </div>
 
      <div class="col-sm-4" ></div>
      <br><br>
