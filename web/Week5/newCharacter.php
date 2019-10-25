@@ -68,6 +68,7 @@
 
 
       ucfirst($fname);
+      var_dump($fname);
       ucfirst($lname );
       ucfirst($player_ac);
       ucfirst($init_bonus);
