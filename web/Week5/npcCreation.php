@@ -71,7 +71,22 @@
           $init_bonus,
           '$classification')" 
         );
-       }
+
+        $result = pg_query_params ( $dbconn,
+        'SELECT FROM npc_fname
+        WHERE npc_fname = $fname ',
+        array ( $question_id )
+      );
+  
+  
+      if ($result === false) {
+          echo pg_last_error($dbconn);
+          $result='<div class="alert alert-fail">Try Again</div>';
+      } else {
+        $result='<div class="alert alert-success">Character Created</div>';
+      }
+    }
+  }
   ?>
 
     <div class="col-sm-4" ></div>

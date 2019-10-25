@@ -115,9 +115,7 @@
     } else {
       $result='<div class="alert alert-success">Character Created</div>';
     }
-    
-
-      }
+  }
 
 
 
