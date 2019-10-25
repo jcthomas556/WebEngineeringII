@@ -31,7 +31,7 @@
     <div class="container">
         <div class="col-lg-4"  >
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" >
-                <input class="form-control mr-sm-2"  type="text" placeholder="Search" name="name">
+                <input class="form-control mr-sm-2"  type="text" autofocus="autofocus" placeholder="Search" name="name">
                 <input type="submit" 
                     style="position: absolute; left: -9999px; width: 1px; height: 1px;"
                     tabindex="-1" />

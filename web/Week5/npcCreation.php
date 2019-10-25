@@ -31,7 +31,7 @@
      <h2 style="text-align:center">New NPC Character</h2>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     <div class="form-group">
-      <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
+      <input type="text" class="form-control" id="fname" autofocus="autofocus" placeholder="First Name" name="fname" required>
     </div>
     <div class="form-group">
       <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
