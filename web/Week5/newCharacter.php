@@ -51,7 +51,7 @@
 
 
 
-      <input type="text" class="form-control, fname" id="fname" placeholder="First Name" name="fname" required>
+      <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
     </div>
     <div class="form-group">
       <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
