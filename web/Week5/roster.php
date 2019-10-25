@@ -31,11 +31,13 @@
     <div class="container">
         <div class="col-lg-4"  >
             <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" >
-                <input class="form-control mr-sm-2" style="width:150px" type="text" placeholder="Search" name="name">
+                <input class="form-control mr-sm-2"  type="text" placeholder="Search" name="name">
                 <input type="submit" 
                     style="position: absolute; left: -9999px; width: 1px; height: 1px;"
                     tabindex="-1" />
             </form>
+           
+
             <?php
                 foreach($db->query(
                     "SELECT
@@ -53,7 +55,8 @@
                         npc_characters
                     ORDER BY date_entered DESC LIMIT 15", PDO::FETCH_ASSOC) as $holder)
                     {
-                        echo '<p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p>';
+                        $list='<div class="alert alert-success"><p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p></div>';
+                        //echo '<p>' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p>';
                     }
 
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -95,6 +98,12 @@
                 }
             }
             ?>
+
+            <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-2">
+                    <?php echo $list; ?>    
+                </div>
+            </div>
             
         </div>
 
