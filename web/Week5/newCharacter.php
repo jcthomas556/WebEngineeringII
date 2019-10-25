@@ -73,8 +73,10 @@
       $race = $_POST["race"];
       $class = $_POST["class"];
 
-      $checker = $db->query("select count(*) from player_characters");
-      vardump($checker);
+      $db->query("SELECT count(*) FROM player_characters", PDO::FETCH_ASSOC) as $checker;
+      echo $checker["count"];
+
+
 
   
 
