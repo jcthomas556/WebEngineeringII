@@ -20,7 +20,7 @@
   <script type="text/javascript">
 jQuery.noConflict();
 jQuery(document).ready(function($) {
-    $('.fname').keyup(function(event) {
+    $('fname').keyup(function(event) {
         var textBox = event.target;
         var start = textBox.selectionStart;
         var end = textBox.selectionEnd;
