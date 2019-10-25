@@ -101,18 +101,18 @@
       //   }
       
       $result = pg_query_params ( $dbconn,
-        'SELECT FROM player_fname
-        WHERE player_fname = '$fname'',
-        array ( $question_id )
-      );
+      'SELECT FROM player_fname
+      WHERE player_fname = $fname ',
+      array ( $question_id )
+    );
 
 
-      if ($result === false) {
-          print pg_last_error($dbconn);
-      } else {
-          print 'everything was ok';
-      }
-      
+    if ($result === false) {
+        print pg_last_error($dbconn);
+    } else {
+        print 'everything was ok';
+    }
+    
 
       }
 
