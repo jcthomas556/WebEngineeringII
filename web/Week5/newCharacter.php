@@ -40,10 +40,10 @@
 
 
 
-      <input type="text" class="form-control"  style="text-transform: capitalize;" id="fname" placeholder="First Name" name="fname" required>
+      <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname" required>
     </div>
     <div class="form-group">
-      <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
+      <input type="text" class="form-control" style="text-transform: capitalize;" id="lname" placeholder="Last Name" name="lname" required>
     </div>
     <div class="form-group">
       <input type="text" class="form-control" id="player_ac" placeholder="Player AC" name="player_ac" required>
@@ -97,7 +97,18 @@
   
 </div>
 
-
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(document).ready(function($) {
+    $('.fname').keyup(function(event) {
+        var textBox = event.target;
+        var start = textBox.selectionStart;
+        var end = textBox.selectionEnd;
+        textBox.value = textBox.value.charAt(0).toUpperCase() + textBox.value.slice(1).toLowerCase();
+        textBox.setSelectionRange(start, end);
+    });
+});
+</script>
 
 
 
