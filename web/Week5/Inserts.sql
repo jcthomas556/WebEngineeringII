@@ -142,22 +142,18 @@ JOIN address AS a ON p.id = a.person_id
 WHERE a.zip = '97299';
 
 
+----need a unique constraint
 
+CREATE UNIQUE INDEX CONCURRENTLY player_characters_player_fname 
+ON player_characters (player_fname);
 
-INSERT into player_characters (player_fname, player_lname, player_ac, player_init_bonus, player_race, player_class) 
-VALUES (
-    'Leila',
-    'LaLoo',
-    '14',
-    '3',
-    'Human',
-    'Lady'
-    );
+CREATE UNIQUE INDEX CONCURRENTLY npc_characters_player_fname 
+ON npc_characters (npc_fname);
 
-INSERT INTO npc_characters (npc_fname, npc_lname, npc_ac, npc_init_bonus, npc_race_type) 
-        VALUES (
-          'Tina',
-          'Belcher',
-          13,
-          3,
-          'Child');
+ALTER TABLE player_characters 
+ADD CONSTRAINT unique_player_characters_player_fname 
+UNIQUE USING INDEX player_characters_player_fname;
+
+ALTER TABLE npc_characters 
+ADD CONSTRAINT unique_npc_characters_player_fname 
+UNIQUE USING INDEX npc_characters_player_fname;
