@@ -73,7 +73,7 @@
         );
 
         $result = pg_query_params ( $dbconn,
-        'SELECT FROM npc_fname
+        'SELECT npc_fname FROM npc_characters
         WHERE npc_fname = $fname ',
         array ( $question_id )
       );
@@ -88,6 +88,12 @@
     }
   }
   ?>
+
+<div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <?php echo $result; ?>    
+        </div>
+    </div>
 
     <div class="col-sm-4" ></div>
      <br><br>
