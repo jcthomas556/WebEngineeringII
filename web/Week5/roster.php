@@ -39,7 +39,7 @@
                     tabindex="-1" />
                     <br>
             </form>
-            <p  id="defaultList" >hello test </p>
+       
 
             <?php
                 foreach($db->query(
