@@ -158,7 +158,17 @@ for (let i = 0; i < list.length; i++) {
 // for (let x=0; x< players.length; i++){
 //     document.getElementById("demo").innerHTML = players;
 // }
-document.getElementById("demo").innerHTML = players;
+
+var activePlayers = document.createElement('ul');
+for (var x = 0; i < array.length; i++){
+    var item = document.createElement('li');
+    item.appendChild(document.greateTextNode(players[i]));
+
+    list.appendChild(item);
+
+
+}
+    //document.getElementById("demo").innerHTML = players;
 
 // function addPLayer(){
 //     for (let i = 0; i < list.length; i++) {
