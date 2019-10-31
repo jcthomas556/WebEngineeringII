@@ -16,4 +16,11 @@ function deleteDefault(){
         var elmnt = document.getElementById("defaultList");
         elmnt.remove();
     }
+
+    document.getElementById('namedChar').onclick = changeColor;
+document.getElementsByClassName('lists').onclick = changeColor;
+function changeColor(){
+    document.body.style.color="purple";
+    return false;
+}
 }
