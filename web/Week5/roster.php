@@ -126,8 +126,8 @@
 
         <div class="col-lg-1"></div>
 
-        <div id="players" class="col-lg-4">
-        <pre id="demo"></pre>
+        <div class="col-lg-4" id="activePlayers">
+        
             <ul class="list-group">
                 <li class="list-group-item"> </li>
                 <li class="list-group-item">Player 2 </li>
@@ -158,8 +158,12 @@ for (let i = 0; i < list.length; i++) {
     }
 }
 
-document.getElementById("demo").innerHTML = cars[0];
+//document.getElementById("demo").innerHTML = cars[0];
 
+for (i = 0; i < players.length; i++){
+	document.getElementById("activePlayers").innerHTML += "<p class = 'lists'> <br> " + players[i] + '</p>';
+	
+}
 // for (let x=0; x< players.length; i++){
 //     document.getElementById("demo").innerHTML = players;
 // }
