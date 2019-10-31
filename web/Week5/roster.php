@@ -144,12 +144,12 @@
     </div>
 <script>
 
-document.getElementById('defaultList').onclick = changeColor;
+//document.getElementById('defaultList').onclick = changeColor;
 
-function changeColor(){
-    this.style.color="green";
-    return false;
-}
+// function changeColor(){
+//     this.style.color="green";
+//     return false;
+// }
 
 </script>
 </body>
