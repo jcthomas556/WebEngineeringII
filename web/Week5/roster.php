@@ -150,7 +150,8 @@ for (let i = 0; i < list.length; i++) {
     // if(color == "green"){
     //     players[i] = list[i];
     // }
-    alert(document.getElementById("defaultList").style.color);
+    var color = document.getElementById("defaultList").style.color;
+    console.log(color);
     //why doesn't this work to fill the players array??^
 }
 
