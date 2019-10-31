@@ -126,7 +126,7 @@
 
         <div class="col-lg-1"></div>
 
-        <div class="col-lg-4">
+        <div id="players" class="col-lg-4">
             <ul class="list-group">
                 <li id="demo" class="list-group-item"> </li>
                 <li class="list-group-item">Player 2 </li>
@@ -168,6 +168,8 @@ for (var x = 0; x < players.length; x++){
 
 
 }
+
+document.getElementById('players').appendChild(makeUL(options[0]));
     //document.getElementById("demo").innerHTML = players;
 
 // function addPLayer(){
