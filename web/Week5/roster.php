@@ -150,13 +150,17 @@ for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { list[i].style.color = "green"; }
     //list[i].onclick = addIt() { players[i] = list[i]; }
     
-
+    if(list[i].style.color === "green"){
+        players[i] = list[i];
+    }
 }
 
 
-function addPLayer(){
-    players[i] = list[i];
-}
+// function addPLayer(){
+//     for (let i = 0; i < list.length; i++) {
+//         players[i] = list[i];
+//     }
+// }
 console.log(players);
 
 function displayPlayers(){
