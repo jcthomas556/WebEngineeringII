@@ -170,7 +170,7 @@ function clearPlayers(){
     for (i = 0; i < list.length; i++){
         list[i].style.color = ""; 
     }
-    //loop through and reset the color on all 
+    //loop through and reset the color on all ha
 }
 
 
