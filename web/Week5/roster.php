@@ -146,11 +146,11 @@ for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { list[i].style.color = "green"; }
     //list[i].onclick = addIt() { players[i] = list[i]; }
     
-    var color = list[i].style.color == "green";
-    if(color == "green"){
-        players[i] = list[i];
-    }
-    alert(color);
+    // var color = list[i].style.color == "green";
+    // if(color == "green"){
+    //     players[i] = list[i];
+    // }
+    alert(document.getElementById("defaultList").style.color);
     //why doesn't this work to fill the players array??^
 }
 
