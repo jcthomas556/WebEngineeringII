@@ -115,7 +115,7 @@
 
         <div class="col-lg-2">
 
-            <button type="button" class="btn btn-secondary btn-lg btn-block"> Add </button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="addPlayers()"> Add </button>
             <br>
             <button type="button" class="btn btn-secondary btn-lg btn-block">Clear</button>
             <br>
@@ -144,10 +144,7 @@
         <button onclick="window.location.href='InitTracLanding.php'" type="button" class="btn btn-secondary btn-sm btn-block">Home</button>
     </div>
 <script>
-var list = document.getElementsByClassName("lists");
-for (let i = 0; i < list.length; i++) {
-	list[i].onclick = function() { list[i].style.color = "green"; }
-}
+
 //document.getElementById('defaultList').onclick = changeColor;
 
 // function changeColor(){
