@@ -169,7 +169,7 @@ for (i = 0; i < players.length; i++){
 }
 function clearPlayers(){
     players.length = 0;
-    addPlayers();
+    document.getElementById("activePlayers").innerHTML = "";
 }
 console.log(players);
 
