@@ -178,7 +178,7 @@ function clearPlayers(){
 
 //on pageload, load all globals from localStorage to players array
 document.addEventListener("DOMContentLoaded" , ()=>{
-    var playersFight[];
+    var playersFight = [];
     playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
     players.push(...playersFight);
     console.log(players);
