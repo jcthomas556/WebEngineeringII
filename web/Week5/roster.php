@@ -155,16 +155,18 @@ for (let i = 0; i < list.length; i++) {
 
 
 function addPlayers(){
-for (i = 0; i < players.length; i++){
-    document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
-      
-    }
-    for (i = 0; i < list.length; i++){
-            list[i].style.color = ""; 
+    for (i = 0; i < players.length; i++){
+        document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
+        
         }
-    players.length = 0;
-    //loop through and reset the color on all 
-}
+        for (i = 0; i < list.length; i++){
+                list[i].style.color = ""; 
+            }
+        players.length = 0;
+        //loop through and reset the color on all 
+        localStorage.setItem("storedPlayers", JSON.stringify(players));
+    }
+
 function clearPlayers(){
     players.length = 0;
     document.getElementById("activePlayers").innerHTML = "";
@@ -177,13 +179,13 @@ function clearPlayers(){
 //on pageload, load all globals from localStorage to players array
 document.addEventListener("DOMContentLoaded" , ()=>{
 
-    var playersFight = JSON.parse(localStorage.getItem("players"));
+    var playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
     players.push(...playersFight);
 //TODO make sure this doesn't crash on run
 
 })
 
-localStorage.setItem("players", JSON.stringify(players));
+
 
 
 
