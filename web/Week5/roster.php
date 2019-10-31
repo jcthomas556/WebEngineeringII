@@ -145,9 +145,7 @@ var players = ["player 1", "player 2", "player 3"];
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
         list[i].style.color = "green"; 
-        var color = "green";
-        players[i] = list[i];
-
+        players.push(list[i]);
     
     }
     //list[i].onclick = addIt() { players[i] = list[i]; }
