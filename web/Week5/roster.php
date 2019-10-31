@@ -21,7 +21,16 @@
 </head>
 
 <body>
+<script>
 
+document.getElementById('defaultList').onclick = changeColor;
+
+function changeColor(){
+    document.body.style.color="green";
+    return false;
+}
+
+</script>
 
 
     <div class="jumbotron text-center" style="background-color:maroon">
