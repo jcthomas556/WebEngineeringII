@@ -42,7 +42,8 @@
 
             
 
-            <?php//TODO prevent search from clearing out the array data. store array as a session variable, that way the roll initiative screen can work too
+            <?php 
+            //TODO prevent search from clearing out the array data. store array as a session variable, that way the roll initiative screen can work too
                 foreach($db->query(
                     "SELECT
                         player_fname,
