@@ -146,44 +146,21 @@ for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { list[i].style.color = "green"; }
     //list[i].onclick = addIt() { players[i] = list[i]; }
     
-    if(list[i].style.color === "green"){
+    if(list[i].style.color == "green"){
         players[i] = list[i];
     }
 }
 
-//document.getElementById("demo").innerHTML = cars[0];
+
 
 for (i = 0; i < players.length; i++){
 	document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';
 	
 }
-// for (let x=0; x< players.length; i++){
-//     document.getElementById("demo").innerHTML = players;
-// }
 
-// var activePlayers = document.createElement('ul');
-// for (var x = 0; x < players.length; x++){
-//     var item = document.createElement('li');
-//     item.appendChild(document.createTextNode(players[x]));
-
-//     activePlayers.appendChild(item);
-
-
-// }
-
-//document.getElementById('players').appendChild(makeUL(options[0]));
-    //document.getElementById("demo").innerHTML = players;
-
-// function addPLayer(){
-//     for (let i = 0; i < list.length; i++) {
-//         players[i] = list[i];
-//     }
-// }
 console.log(players);
 
-function displayPlayers(){
-    
-}
+
 
 </script>
 </body>
