@@ -164,7 +164,7 @@ for (var x = 0; x < players.length; x++){
     var item = document.createElement('li');
     item.appendChild(document.createTextNode(players[x]));
 
-    list.appendChild(item);
+    activePlayers.appendChild(item);
 
 
 }
