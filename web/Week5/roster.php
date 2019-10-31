@@ -147,7 +147,7 @@
 var list = document.getElementsByClassName("lists");
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { list[i].style.color = "green"; }
-    addPlayers(list[i]);
+    list[i[.onclick=addPlayers(list[i]);
 }
 
 
