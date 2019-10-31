@@ -52,6 +52,11 @@
  
  </div>
 
+<script>
+  var playersFight = JSON.parse(localStorage.getItem("players"));
 
+  alert(playersFight);
+  
+</script>
 </body>
 </html>
