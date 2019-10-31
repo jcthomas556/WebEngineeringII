@@ -160,9 +160,9 @@ for (let i = 0; i < list.length; i++) {
 // }
 
 var activePlayers = document.createElement('ul');
-for (var x = 0; i < array.length; i++){
+for (var x = 0; x < array.length; x++){
     var item = document.createElement('li');
-    item.appendChild(document.greateTextNode(players[i]));
+    item.appendChild(document.greateTextNode(players[x]));
 
     list.appendChild(item);
 
