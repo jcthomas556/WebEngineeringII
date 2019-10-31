@@ -128,10 +128,8 @@
 
         <div class="col-lg-4" id="activePlayers">
         
-            <ul class="list-group">
-                <li class="list-group-item"> </li>
-                <li class="list-group-item">Player 2 </li>
-                <li class="list-group-item">Player 3 </li>
+            <ul class="list-group lists">
+                
             </ul>
         </div>
     </div>
