@@ -140,7 +140,7 @@
 <script>
 
 var list = document.getElementsByClassName("lists");
-var players = ["player 1", "player 2", "player 3"];
+var players = [];
 
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
