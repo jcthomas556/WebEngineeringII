@@ -127,6 +127,7 @@
         <div class="col-lg-1"></div>
 
         <div class="col-lg-4">
+        <p id="demo"></p>
             <ul class="list-group">
                 <li class="list-group-item">Player 1 </li>
                 <li class="list-group-item">Player 2 </li>
@@ -145,7 +146,7 @@
     </div>
 <script>
 var list = document.getElementsByClassName("lists");
-var players = [""];
+var players = ["player 1", "player 2", "player 3"];
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { list[i].style.color = "green"; }
     //list[i].onclick = addIt() { players[i] = list[i]; }
@@ -155,6 +156,10 @@ for (let i = 0; i < list.length; i++) {
     }
 }
 
+// for (let x=0; x< players.length; i++){
+//     document.getElementById("demo").innerHTML = players;
+// }
+document.getElementById("demo").innerHTML = players;
 
 // function addPLayer(){
 //     for (let i = 0; i < list.length; i++) {
