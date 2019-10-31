@@ -127,7 +127,6 @@
         <div class="col-lg-1"></div>
 
         <div class="col-lg-4">
-        <p id="demo"></p>
             <ul class="list-group">
                 <li id="demo" class="list-group-item"> </li>
                 <li class="list-group-item">Player 2 </li>
