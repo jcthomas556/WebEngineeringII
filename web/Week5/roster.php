@@ -42,7 +42,7 @@
 
             
 
-            <?php
+            <?php//TODO prevent search from clearing out the array data. store array as a session variable, that way the roll initiative screen can work too
                 foreach($db->query(
                     "SELECT
                         player_fname,
@@ -145,19 +145,11 @@ var players = [];
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
         list[i].style.color = "green"; 
-        // if(check for duplicates){
-            players.push(list[i].innerHTML);
-        //}
+
+        players.push(list[i].innerHTML);
+        
     }
-    //list[i].onclick = addIt() { players[i] = list[i]; }
     
-    // var color = list[i].style.color == "green";
-    // if(color == "green"){
-    //     players[i] = list[i];
-    // }
-    // var color = document.getElementById("defaultList").style.color;
-    
-    //why doesn't this work to fill the players array??^
 }
 
 
@@ -180,8 +172,6 @@ function clearPlayers(){
     }
     //loop through and reset the color on all 
 }
-console.log(players);
-
 
 
 </script>
