@@ -164,10 +164,11 @@ for (let i = 0; i < list.length; i++) {
 function addPlayers(){
 for (i = 0; i < players.length; i++){
     document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
-        for (i = 0; i < list.length; i++){
+      
+    }
+    for (i = 0; i < list.length; i++){
             list[i].style.color = ""; 
         }
-    }
     players.length = 0;
     //loop through and reset the color on all 
 }
