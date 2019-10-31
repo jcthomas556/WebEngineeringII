@@ -126,9 +126,9 @@
 
         <div class="col-lg-1"></div>
 
-        <div class="col-lg-4" id="activePlayers">
+        <div class="col-lg-4" >
         
-            <ul class="list-group lists">
+            <ul class="list-group lists" id="activePlayers">
                 
             </ul>
         </div>
