@@ -149,7 +149,7 @@ for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() ;
 }
 
-fcuntion(){
+function(){
     list[i].style.color = "green";
 }
 
