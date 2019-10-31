@@ -164,12 +164,14 @@ for (let i = 0; i < list.length; i++) {
 function addPlayers(){
 for (i = 0; i < players.length; i++){
 	document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';
-	
+    players.length = 0;
+    //loop through and reset the color on all 
     }
 }
 function clearPlayers(){
     players.length = 0;
     document.getElementById("activePlayers").innerHTML = "";
+    //loop through and reset the color on all 
 }
 console.log(players);
 
