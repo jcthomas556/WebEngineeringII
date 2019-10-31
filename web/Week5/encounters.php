@@ -53,10 +53,10 @@
  </div>
 
 <script>
-  var playersFight = JSON.parse(localStorage.getItem("players"));
+  // var playersFight = JSON.parse(localStorage.getItem("players"));
 
-  alert(playersFight);
-  
+  // alert(playersFight);
+
 </script>
 </body>
 </html>

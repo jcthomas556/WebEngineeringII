@@ -173,7 +173,7 @@ function clearPlayers(){
     //loop through and reset the color on all 
 }
 
-localStorage.setItem("players", JSON.stringify(players));
+//localStorage.setItem("players", JSON.stringify(players));
 
 
 </script>
