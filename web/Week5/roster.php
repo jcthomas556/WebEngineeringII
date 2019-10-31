@@ -60,8 +60,8 @@
                         npc_characters
                     ORDER BY date_entered DESC LIMIT 8", PDO::FETCH_ASSOC) as $holder)
                     {
-                        echo '<p>happy</p>';
-                        //echo '<p class="lists" id="defaultList" onclick"addPlayer()" >' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p> ';
+                        
+                        echo '<p class="lists" id="defaultList" onclick"addPlayer()" >' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p> ';
                         
                     }
 
