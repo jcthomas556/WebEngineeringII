@@ -146,10 +146,12 @@
 <script>
 var list = document.getElementsByClassName("lists");
 for (let i = 0; i < list.length; i++) {
-    list[i].onclick = function() { list[i].style.color = "green"; }
+    list[i].onclick = function() ;
 }
 
-
+fcuntion(){
+    list[i].style.color = "green";
+}
 
 function addPlayers(){
     
