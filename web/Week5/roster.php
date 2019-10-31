@@ -106,7 +106,7 @@
             
         </div>
 
-        <p  id="namedChar" > Test test test test test </p>
+        <p  id="namedChar"  > Test test test test test </p>
 
         <div class="col-lg-1"></div>
 

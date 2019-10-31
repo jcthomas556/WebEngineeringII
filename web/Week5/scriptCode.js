@@ -18,7 +18,9 @@ function deleteDefault(){
     }
 
     document.getElementById('namedChar').onclick = changeColor;
-document.getElementsByClassName('lists').onclick = changeColor;
+
+document.getElementById('defaultList').onclick = changeColor;
+
 function changeColor(){
     document.body.style.color="purple";
     return false;
