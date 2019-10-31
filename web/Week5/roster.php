@@ -174,7 +174,7 @@ function clearPlayers(){
     //loop through and reset the color on all ha
 }
 
-on pageload, load all globals from localStorage to players array
+//on pageload, load all globals from localStorage to players array
 document.addEventListener("DOMContentLoaded" , ()=>{
 
     var playersFight = JSON.parse(localStorage.getItem("players"));
