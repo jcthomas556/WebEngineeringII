@@ -143,10 +143,11 @@
         <button onclick="window.location.href='InitTracLanding.php'" type="button" class="btn btn-secondary btn-sm btn-block">Home</button>
     </div>
 <script>
-    document.getElementById('defaultList').onclick = changeColor;
+
+document.getElementById('defaultList').onclick = changeColor;
 
 function changeColor(){
-    document.body.style.color="green";
+    this.style.color="green";
     return false;
 }
 
