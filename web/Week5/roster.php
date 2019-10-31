@@ -145,9 +145,9 @@ var players = [];
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
         list[i].style.color = "green"; 
-        if(check for duplicates){
+        // if(check for duplicates){
             players.push(list[i].innerHTML);
-        }
+        //}
     }
     //list[i].onclick = addIt() { players[i] = list[i]; }
     
