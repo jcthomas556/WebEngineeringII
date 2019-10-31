@@ -17,12 +17,14 @@ function deleteDefault(){
         elmnt.remove();
     }
 
-    document.getElementById('namedChar').onclick = changeColor;
+   
 
 document.getElementById('defaultList').onclick = changeColor;
 
 function changeColor(){
-    document.body.style.color="purple";
+    document.body.style.color="green";
     return false;
 }
+
+
 }
