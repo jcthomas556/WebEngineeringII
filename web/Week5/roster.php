@@ -149,14 +149,14 @@ var players = [""];
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { list[i].style.color = "green"; }
     players[i] = list[i];
-    alert(players[0]);
+    
 
 }
+console.log(players);
 
 
-
-function addPlayers(player){
-    alert(player);
+function displayPlayers(){
+    
 }
 
 </script>
