@@ -37,7 +37,7 @@
                     tabindex="-1" />
                     <br>
             </form>
-            <p class="lists" id="defaultList" >hello test </p>
+            <p  id="defaultList" >hello test </p>
 
             <?php
                 foreach($db->query(
@@ -106,7 +106,7 @@
             
         </div>
 
-        <p  id="namedChar"  > Test test test test test </p>
+        
 
         <div class="col-lg-1"></div>
 
