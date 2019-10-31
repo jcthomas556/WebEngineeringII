@@ -117,7 +117,7 @@
 
             <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="addPlayers()"> Add </button>
             <br>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Clear</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="clearPlayers()">Clear</button>
             <br>
             <button onclick="window.location.href='encounters.php'" type="button" class="btn btn-secondary btn-lg btn-block">Roll Initiative</button>
             <br>
@@ -145,8 +145,9 @@ var players = [];
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
         list[i].style.color = "green"; 
-        players.push(list[i].innerHTML);
-    
+        if(check for duplicates){
+            players.push(list[i].innerHTML);
+        }
     }
     //list[i].onclick = addIt() { players[i] = list[i]; }
     
@@ -164,9 +165,12 @@ function addPlayers(){
 for (i = 0; i < players.length; i++){
 	document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';
 	
+    }
 }
+function clearPlayers(){
+    players = [];
+    addPlayers();
 }
-
 console.log(players);
 
 
