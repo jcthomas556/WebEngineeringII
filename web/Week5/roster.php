@@ -154,7 +154,7 @@ for (let i = 0; i < list.length; i++) {
 //document.getElementById("demo").innerHTML = cars[0];
 
 for (i = 0; i < players.length; i++){
-	document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> <br> " + players[i] + '</p>';
+	document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p><br>';
 	
 }
 // for (let x=0; x< players.length; i++){
