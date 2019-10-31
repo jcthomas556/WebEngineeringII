@@ -127,8 +127,9 @@
         <div class="col-lg-1"></div>
 
         <div id="players" class="col-lg-4">
+        <pre id="demo"></pre>
             <ul class="list-group">
-                <li id="demo" class="list-group-item"> </li>
+                <li class="list-group-item"> </li>
                 <li class="list-group-item">Player 2 </li>
                 <li class="list-group-item">Player 3 </li>
             </ul>
@@ -144,8 +145,10 @@
         <button onclick="window.location.href='InitTracLanding.php'" type="button" class="btn btn-secondary btn-sm btn-block">Home</button>
     </div>
 <script>
+
 var list = document.getElementsByClassName("lists");
 var players = ["player 1", "player 2", "player 3"];
+
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { list[i].style.color = "green"; }
     //list[i].onclick = addIt() { players[i] = list[i]; }
@@ -155,21 +158,23 @@ for (let i = 0; i < list.length; i++) {
     }
 }
 
+document.getElementById("demo").innerHTML = cars[0];
+
 // for (let x=0; x< players.length; i++){
 //     document.getElementById("demo").innerHTML = players;
 // }
 
-var activePlayers = document.createElement('ul');
-for (var x = 0; x < players.length; x++){
-    var item = document.createElement('li');
-    item.appendChild(document.createTextNode(players[x]));
+// var activePlayers = document.createElement('ul');
+// for (var x = 0; x < players.length; x++){
+//     var item = document.createElement('li');
+//     item.appendChild(document.createTextNode(players[x]));
 
-    activePlayers.appendChild(item);
+//     activePlayers.appendChild(item);
 
 
-}
+// }
 
-document.getElementById('players').appendChild(makeUL(options[0]));
+//document.getElementById('players').appendChild(makeUL(options[0]));
     //document.getElementById("demo").innerHTML = players;
 
 // function addPLayer(){
