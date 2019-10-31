@@ -19,7 +19,7 @@ function deleteDefault(){
 
    
 
-document.getElementById('defaultList').onclick = changeColor;
+//document.getElementById('defaultList').onclick = changeColor;
 
 function changeColor(){
     document.body.style.color="green";
