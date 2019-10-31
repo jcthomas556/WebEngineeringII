@@ -21,16 +21,9 @@
 </head>
 
 <body>
-<script>
 
-document.getElementById('defaultList').onclick = changeColor;
 
-function changeColor(){
-    document.body.style.color="green";
-    return false;
-}
 
-</script>
 
 
     <div class="jumbotron text-center" style="background-color:maroon">
@@ -149,6 +142,15 @@ function changeColor(){
     <div class="col-lg-1">
         <button onclick="window.location.href='InitTracLanding.php'" type="button" class="btn btn-secondary btn-sm btn-block">Home</button>
     </div>
+<script>
+    document.getElementById('defaultList').onclick = changeColor;
+
+function changeColor(){
+    document.body.style.color="green";
+    return false;
+}
+
+</script>
 </body>
 
 </html>
