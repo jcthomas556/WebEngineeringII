@@ -168,7 +168,7 @@ for (i = 0; i < players.length; i++){
     }
 }
 function clearPlayers(){
-    players = [];
+    players.length = 0;
     addPlayers();
 }
 console.log(players);
