@@ -164,7 +164,9 @@ for (let i = 0; i < list.length; i++) {
 function addPlayers(){
 for (i = 0; i < players.length; i++){
     document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
-    list[i].style.color = ""; 
+        for (i = 0; i < list.length; i++){
+            list[i].style.color = ""; 
+        }
     }
     players.length = 0;
     //loop through and reset the color on all 
@@ -172,7 +174,9 @@ for (i = 0; i < players.length; i++){
 function clearPlayers(){
     players.length = 0;
     document.getElementById("activePlayers").innerHTML = "";
-    list[i].style.color = ""; 
+    for (i = 0; i < list.length; i++){
+        list[i].style.color = ""; 
+    }
     //loop through and reset the color on all 
 }
 console.log(players);
