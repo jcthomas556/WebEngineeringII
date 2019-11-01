@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     console.log(playersFight);
     for (i = 0; i < playersFight.length; i++){
     
-        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + temp + "</span> " + playersFight[i] + "</p>";   
+        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + temp + "</span>                " + playersFight[i] + "</p>";   
         
         }
  
