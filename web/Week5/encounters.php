@@ -58,7 +58,7 @@
 document.addEventListener("DOMContentLoaded" , ()=>{
     var playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
     
-    
+    console.log(playersFight);
     // for (var y = 0; y < playersFight.length; y++){
     //     players.push(playersFight[y])
     // }
@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
   // alert(playersFight);
   function addPlayersEncounter(){
+    console.log(playersFight);
     for (i = 0; i < playersFight.length; i++){
       alert('madeit');
         document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> " + playersFight[i] + '</p>';   
