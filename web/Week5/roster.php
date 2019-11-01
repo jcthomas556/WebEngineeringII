@@ -161,7 +161,8 @@ for (let i = 0; i < list.length; i++) {
 
         
         players.push(list[i].innerHTML);
-        var n = parseInt(players[i]);
+        var string = players[i];
+        var n = parseInt(string);
         alert(n);
     }
     
