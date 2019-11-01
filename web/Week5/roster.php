@@ -161,9 +161,10 @@ for (let i = 0; i < list.length; i++) {
 
         
         players.push(list[i].innerHTML);
-        var string = players[i];
 
-        var firstName = string.replace(/ .*/,'');
+        //var string = players[i];
+
+        //var firstName = string.replace(/ .*/,'');
 
 //TODO1 send the firstName variable to php, do a query with php 
 
@@ -188,9 +189,9 @@ for (let i = 0; i < list.length; i++) {
 
         //the number result from the query gets added to a d20 roll and then stuck into the array for global storage.
 
-    //pass the global variables to the encounter page to be displayed
+    //pass the global variables to the encounter page to be
 
-        //alert(firstWord);
+    
     }
     
 }
