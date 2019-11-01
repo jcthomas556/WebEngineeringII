@@ -161,7 +161,7 @@ for (let i = 0; i < list.length; i++) {
 
         
         players.push(list[i].innerHTML);
-        alert(players[1].player_ac);
+        alert(players[1]);
     }
     
 }
