@@ -197,11 +197,15 @@ for (let i = 0; i < list.length; i++) {
 }
 
 function rollInitiative(){
+    alert('made it');
     for (let i = 0; i < players.length; i++) {
         var string = players[i];
         var firstName = string.replace(/ .*/,'');
-        alert(firstName);
+        
+        alert('made it2');
     }
+    alert(firstName);
+    alert('madeit3');
     window.location.href='encounters.php';
 }
 
