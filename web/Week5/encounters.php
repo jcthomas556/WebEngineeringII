@@ -26,13 +26,13 @@
   
 <div class="container">
   <h2 style="text-align:center">Creatures in this encounter</h2>
-  <div class="col-lg-10" id="activePlayersEncounter"></div>
+  <div id="activePlayersEncounter"></div>
 
     </div>
-    <!-- <li class="list-group-item">Player 1 <span class="badge">12</span></li>
+    <li class="list-group-item">Player 1 <span class="badge">12</span></li>
   <li class="list-group-item">Player 2 <span class="badge">5</span></li> 
   <li class="list-group-item">Player 3 <span class="badge">3</span></li>
-  </ul> -->
+  </ul>
   <button type="button" class="btn btn-secondary btn-lg btn-block">Re-Roll</button>
   
 </div>
@@ -73,11 +73,12 @@ document.addEventListener("DOMContentLoaded" , ()=>{
   // var playersFight = JSON.parse(localStorage.getItem("players"));
 
   // alert(playersFight);
+  var temp = 10;
   function addPlayersEncounter(){
     console.log(playersFight);
     for (i = 0; i < playersFight.length; i++){
     
-        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> " + playersFight[i] + '</p>';   
+        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> " + playersFight[i] + "<span class='badge'> " + temp + "</span></p>";   
         
         }
  
