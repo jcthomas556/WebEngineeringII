@@ -4,9 +4,24 @@
             document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
             
             var string = players[i];
-            var firstName = string.replace(/ .*/,'');
-            alert(firstName);
-            console.log(firstName);
+            var firstName = string.replace(/ .*/,''); // verified working
+
+                if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        firstName = this.responseText;
+                    }
+                };
+                xmlhttp.open("GET","encounters.php?q="+str,true);
+                xmlhttp.send();
+                }
+                
             
             }
             for (i = 0; i < list.length; i++){
