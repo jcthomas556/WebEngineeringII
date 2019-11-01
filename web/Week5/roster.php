@@ -165,6 +165,7 @@ function addPlayers(){
         players.length = 0;
         //loop through and reset the color on all 
         localStorage.setItem("storedPlayers", JSON.stringify(players));
+
     }
 
 function clearPlayers(){
@@ -178,9 +179,10 @@ function clearPlayers(){
 
 //on pageload, load all globals from localStorage to players array
 document.addEventListener("DOMContentLoaded" , ()=>{
-    var playersFight = [];
-    playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
+    var playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
+    alert(playersFight);
     console.log(playersFight);
+
     for (var y = 0; y < playersFight.length; y++){
         players.push(playersFight[i])
     }
