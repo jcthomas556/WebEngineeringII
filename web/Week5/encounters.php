@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
     addPlayersEncounter();
 
-}
+})
   // var playersFight = JSON.parse(localStorage.getItem("players"));
 
   // alert(playersFight);
