@@ -26,7 +26,7 @@
   
 <div class="container">
   <h2 style="text-align:center">Creatures in this encounter</h2>
-  <div class="col-lg-4" id="activePlayersEncounter"></div>
+  <div class="col-lg-4" id="activePlayersEncounter"><p>TEST</p></div>
 
     </div>
     <!-- <li class="list-group-item">Player 1 <span class="badge">12</span></li>
