@@ -164,6 +164,7 @@ function addPlayers(){
             }
         players.length = 0;
         //loop through and reset the color on all 
+        alert(players);
         localStorage.setItem("storedPlayers", JSON.stringify(players));
 
     }
