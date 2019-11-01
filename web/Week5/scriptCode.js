@@ -1,4 +1,20 @@
 
+    function addPlayers(){
+        for (i = 0; i < players.length; i++){
+            document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
+            
+            }
+            for (i = 0; i < list.length; i++){
+                    list[i].style.color = ""; 
+                }
+    
+            localStorage.clear();
+            localStorage.setItem("storedPlayers", JSON.stringify(players));
+            players.length = 0;
+       
+    
+        }
+        
   type="text/javascript">
   jQuery.noConflict();
   jQuery(document).ready(function($) {
@@ -18,7 +34,6 @@ function deleteDefault(){
     }
 
    
-
 //document.getElementById('defaultList').onclick = changeColor;
 
 function changeColor(){

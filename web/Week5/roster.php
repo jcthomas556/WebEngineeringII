@@ -15,13 +15,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="styling.css" />
-  <script src="scriptCode.js"></script>
+
 
 
 </head>
 
 <body>
-
+<script src="scriptCode.js"></script>
 
 
 
@@ -154,21 +154,7 @@ for (let i = 0; i < list.length; i++) {
 }
 
 
-function addPlayers(){
-    for (i = 0; i < players.length; i++){
-        document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
-        
-        }
-        for (i = 0; i < list.length; i++){
-                list[i].style.color = ""; 
-            }
 
-        localStorage.clear();
-        localStorage.setItem("storedPlayers", JSON.stringify(players));
-        players.length = 0;
-   
-
-    }
 
 function clearPlayers(){
     players.length = 0;

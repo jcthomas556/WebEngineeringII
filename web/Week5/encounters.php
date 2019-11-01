@@ -53,6 +53,17 @@
  </div>
 
 <script>
+document.addEventListener("DOMContentLoaded" , ()=>{
+    var playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
+    
+
+    for (var y = 0; y < playersFight.length; y++){
+        players.push(playersFight[y])
+    }
+
+    addPlayers();
+
+}
   // var playersFight = JSON.parse(localStorage.getItem("players"));
 
   // alert(playersFight);
