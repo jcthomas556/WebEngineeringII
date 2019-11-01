@@ -20,7 +20,8 @@
                 };
                 xmlhttp.open("GET","encounters.php?q="+str,true);
                 xmlhttp.send();
-                }
+
+                
                 
             
             }
