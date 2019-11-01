@@ -66,15 +66,13 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     addPlayersEncounter();
 
 })
-  // var playersFight = JSON.parse(localStorage.getItem("players"));
-
-  // alert(playersFight);
+  
   var temp = 10;
   function addPlayersEncounter(){
     console.log(playersFight);
     for (i = 0; i < playersFight.length; i++){
     
-        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + temp + "</span>                " + playersFight[i] + "</p>";   
+        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + temp + "</span>" + playersFight[i] + "</p>";   
         
         }
  
