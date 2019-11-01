@@ -162,6 +162,7 @@ for (let i = 0; i < list.length; i++) {
         
         players.push(list[i].innerHTML);
         var string = players[i];
+        alert(string);
         var n = parseInt(string);
         alert(n);
     }
