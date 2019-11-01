@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         players.push(playersFight[y])
     }
 
-    addPlayers();
+    addPlayersEncounter();
 
 }
   // var playersFight = JSON.parse(localStorage.getItem("players"));
