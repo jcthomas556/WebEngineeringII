@@ -74,6 +74,7 @@
                          ': AC of ' . $holder['player_ac'] . ' initiative of ' . $holder['player_init_bonus'] .  '</p> ';
 
                         
+                        
                     }
 
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -158,6 +159,7 @@ for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
         list[i].style.color = "green"; 
 
+        console.log(players);
         players.push(list[i].innerHTML);
         
     }
