@@ -162,12 +162,15 @@ function addPlayers(){
         for (i = 0; i < list.length; i++){
                 list[i].style.color = ""; 
             }
+
+        console.log(players);
+        localStorage.setItem("storedPlayers", JSON.stringify(players));
+        
         players.length = 0;
         //loop through and reset the color on all 
         //problem is that it's not storing anything
         //alert(players);
-        console.log(players);
-        localStorage.setItem("storedPlayers", JSON.stringify(players));
+       
 
     }
 
