@@ -2,6 +2,9 @@
     function addPlayers(){
         for (i = 0; i < players.length; i++){
             document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
+            var string = players[i];
+            var firstName = string.replace(/ .*/,'');
+            alert(firstName);
             
             }
             for (i = 0; i < list.length; i++){
@@ -20,7 +23,7 @@
 
         //build a for loop, in each loop, roll a dice, then add array[0] to it, that's your first number
         //stick that number in a new array diceRolls[0] accessable by encounters
-        
+
 
         //that first number = the span number that shows. 
     }

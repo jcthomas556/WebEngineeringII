@@ -197,16 +197,16 @@ for (let i = 0; i < list.length; i++) {
 }
 
 function rollInitiative(){
-    alert('made it');
-    for (let i = 0; i < players.length; i++) {
-        alert(players[i]);
-        var string = players[i];
-        var firstName = string.replace(/ .*/,'');
+    // alert('made it');
+    // for (let i = 0; i < players.length; i++) {
+    //     alert(players[i]);
+    //     var string = players[i];
+    //     var firstName = string.replace(/ .*/,'');
         
-        alert('made it2');
-    }
-    alert(firstName);
-    alert('madeit3');
+    //     alert('made it2');
+    // }
+    // alert(firstName);
+    // alert('madeit3');
     window.location.href='encounters.php';
 }
 
