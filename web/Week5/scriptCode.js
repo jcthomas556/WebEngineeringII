@@ -2,9 +2,11 @@
     function addPlayers(){
         for (i = 0; i < players.length; i++){
             document.getElementById("activePlayers").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
+            
             var string = players[i];
             var firstName = string.replace(/ .*/,'');
             alert(firstName);
+            console.log(firstName);
             
             }
             for (i = 0; i < list.length; i++){
