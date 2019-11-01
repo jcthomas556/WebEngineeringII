@@ -132,7 +132,7 @@
             <br>
             <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="clearPlayers()">Clear</button>
             <br>
-            <button onclick="window.location.href='encounters.php'" type="button" class="btn btn-secondary btn-lg btn-block" onclick="rollInitiative()">Roll Initiative</button>
+            <button onclick="rollInitiative();window.location.href='encounters.php';" type="button" class="btn btn-secondary btn-lg btn-block" >Roll Initiative</button>
             <br>
 
         </div>
