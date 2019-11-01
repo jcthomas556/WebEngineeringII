@@ -18,7 +18,7 @@
                         firstName = this.responseText;
                     }
                 };
-                xmlhttp.open("GET","encounters.php?q="+str,true);
+                xmlhttp.open("GET","encounters.php?q="+firstName,true);
                 xmlhttp.send();
 
                 
