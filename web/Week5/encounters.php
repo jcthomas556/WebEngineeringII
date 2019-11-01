@@ -55,9 +55,13 @@
  </div>
 
 <script>
+var playersFight[];
 document.addEventListener("DOMContentLoaded" , ()=>{
-    var playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
+    var result = JSON.parse(localStorage.getItem("storedPlayers"));
     
+    for (var y = 0; y < result.length; y++){
+        playersFight.push(result[y])
+    }
     console.log(playersFight);
     // for (var y = 0; y < playersFight.length; y++){
     //     players.push(playersFight[y])
