@@ -60,16 +60,17 @@
                         npc_fname,
                         npc_lname,
                         npc_race_type,
+                        NULL,
                         npc_ac,
-                        date_entered
+                        npc_init_bonus,
+                        date_entered                      
                     FROM
                         npc_characters
                     ORDER BY date_entered DESC LIMIT 8", PDO::FETCH_ASSOC) as $holder)
                     {
                         
                         //echo '<p class="lists" id="defaultList" onclick"addPlayer()" >' . $holder['player_lname'] . ', ' . $holder['player_fname'] . '</p> ';
-                        echo '<p class="lists" id="defaultList" onclick"addPlayer()" >' . $holder['player_fname'] . ' ' . 
-                        $holder['player_lname'] . ' - The '. $holder['player_race'] . ', '. $holder['player_class'] .
+                        echo '<p class="lists" id="defaultList" onclick"addPlayer()" >' . $holder['player_fname'] . ' ' . $holder['player_lname'] . ' - The '. $holder['player_race'] . ', '. $holder['player_class'] .
                          ': AC of ' . $holder['player_ac'] . ' initiative of ' . $holder['player_init_bonus'] .  '</p> ';
 
                         
