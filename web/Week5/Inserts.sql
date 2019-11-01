@@ -168,3 +168,23 @@ WHERE player_fname =
 SELECT player_fname 
 FROM player_characters
 WHERE player_fname = 'Saul';
+
+
+
+SELECT
+   player_fname,
+   player_init_bonus
+FROM
+   player_characters p
+WHERE
+    player_fname = 'Saul'
+UNION
+SELECT
+   npc_fname,
+   npc_init_bonus
+FROM
+   npc_characters
+WHERE
+    npc_fname ='Saul';
+
+

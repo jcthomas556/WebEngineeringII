@@ -14,6 +14,19 @@
        
     
         }
+    function rollInitiative(){
+        //somehow figure how to pair the span number to the user
+        //pass in the global variable
+
+        //build a for loop, in each loop, roll a dice, then add array[0] to it, that's your first number
+        //stick that number in a new array diceRolls[0] accessable by encounters
+        
+
+        //that first number = the span number that shows. 
+    }
+
+
+
 //         function addPlayersEncounter(){
 //             for (i = 0; i < players.length; i++){
 //                 document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   

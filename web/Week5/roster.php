@@ -163,8 +163,34 @@ for (let i = 0; i < list.length; i++) {
         players.push(list[i].innerHTML);
         var string = players[i];
 
-        var firstWord = string.replace(/ .*/,'');
-        alert(firstWord);
+        var firstName = string.replace(/ .*/,'');
+
+//TODO1 send the firstName variable to php, do a query with php 
+
+
+        //run SQL statement 
+//         SELECT
+//    player_fname,
+//    player_init_bonus
+// FROM
+//    player_characters p
+// WHERE
+//     player_fname = '$firstName'
+// UNION
+// SELECT
+//    npc_fname,
+//    npc_init_bonus
+// FROM
+//    npc_characters
+// WHERE
+//     npc_fname ='$firstName';
+
+
+        //the number result from the query gets added to a d20 roll and then stuck into the array for global storage.
+
+    //pass the global variables to the encounter page to be displayed
+
+        //alert(firstWord);
     }
     
 }
