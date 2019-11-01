@@ -190,10 +190,10 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     
     
 
-    // for (var y = 0; y < playersFight.length; y++){
-    //     players.push(playersFight[y])
-    // }
-    players.push(...playersFight);
+    for (var y = 0; y < playersFight.length; y++){
+        players.push(playersFight[y])
+    }
+    //players.push(...playersFight);
    
     addPlayers();
 //TODO make sure this doesn't crash on run
