@@ -159,9 +159,9 @@ for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
         list[i].style.color = "green"; 
 
-        console.log(players);
-        players.push(list[i].innerHTML);
         
+        players.push(list[i].innerHTML);
+        console.log(players);
     }
     
 }
