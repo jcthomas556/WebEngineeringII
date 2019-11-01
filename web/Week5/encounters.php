@@ -55,7 +55,7 @@
  </div>
 
 <script>
-var playersFight[];
+var playersFight=[];
 document.addEventListener("DOMContentLoaded" , ()=>{
     var result = JSON.parse(localStorage.getItem("storedPlayers"));
     
