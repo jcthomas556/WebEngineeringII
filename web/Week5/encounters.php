@@ -26,7 +26,7 @@
   
 <div class="container">
   <h2 style="text-align:center">Creatures in this encounter</h2>
-  <div class="col-lg-10" id="activePlayersEncounter"><p class = 'lists' id = 'defaultList' > test </p></div>
+  <div class="col-lg-10" id="activePlayersEncounter"></div>
 
     </div>
     <!-- <li class="list-group-item">Player 1 <span class="badge">12</span></li>
@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
   // alert(playersFight);
   function addPlayersEncounter(){
     for (i = 0; i < playersFight.length; i++){
+      alert('madeit');
         document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> " + playersFight[i] + '</p>';   
         
         }
