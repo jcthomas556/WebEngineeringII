@@ -18,7 +18,7 @@
 
 </head>
 <body>
-
+<script src="scriptCode.js"></script>
 
 <div class="jumbotron text-center" style="background-color:maroon">
   <h1 id="banner">D&D Initiative Tracker</h1>
@@ -26,11 +26,12 @@
   
 <div class="container">
   <h2 style="text-align:center">Creatures in this encounter</h2>
-  <ul class="list-group">
-    <li class="list-group-item">Player 1 <span class="badge">12</span></li>
+  <div class="col-lg-4" id="activePlayers"></div>
+    </div>
+    <!-- <li class="list-group-item">Player 1 <span class="badge">12</span></li>
   <li class="list-group-item">Player 2 <span class="badge">5</span></li> 
   <li class="list-group-item">Player 3 <span class="badge">3</span></li>
-  </ul>
+  </ul> -->
   <button type="button" class="btn btn-secondary btn-lg btn-block">Re-Roll</button>
   
 </div>
