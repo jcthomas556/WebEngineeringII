@@ -181,6 +181,7 @@ function clearPlayers(){
         list[i].style.color = ""; 
     }
     //loop through and reset the color on all ha
+    localStorage.clear();
 }
 
 //on pageload, load all globals from localStorage to players array
