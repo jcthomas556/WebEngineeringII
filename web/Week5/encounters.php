@@ -26,7 +26,8 @@
   
 <div class="container">
   <h2 style="text-align:center">Creatures in this encounter</h2>
-  <div class="col-lg-4" id="activePlayers"></div>
+  <div class="col-lg-4" id="activePlayersEncounter"></div>
+
     </div>
     <!-- <li class="list-group-item">Player 1 <span class="badge">12</span></li>
   <li class="list-group-item">Player 2 <span class="badge">5</span></li> 
@@ -57,10 +58,10 @@
 document.addEventListener("DOMContentLoaded" , ()=>{
     var playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
     
-
-    for (var y = 0; y < playersFight.length; y++){
-        players.push(playersFight[y])
-    }
+    
+    // for (var y = 0; y < playersFight.length; y++){
+    //     players.push(playersFight[y])
+    // }
 
     addPlayersEncounter();
 
@@ -68,7 +69,14 @@ document.addEventListener("DOMContentLoaded" , ()=>{
   // var playersFight = JSON.parse(localStorage.getItem("players"));
 
   // alert(playersFight);
+  function addPlayersEncounter(){
+    for (i = 0; i < playersFight.length; i++){
+        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> " + playersFight[i] + '</p>';   
+        
+        }
+ 
 
+    }
 </script>
 </body>
 </html>

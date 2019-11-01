@@ -14,23 +14,23 @@
        
     
         }
-        function addPlayersEncounter(){
-            for (i = 0; i < players.length; i++){
-                document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
+//         function addPlayersEncounter(){
+//             for (i = 0; i < players.length; i++){
+//                 document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> " + players[i] + '</p>';   
                 
-                }
-                for (i = 0; i < list.length; i++){
-                        list[i].style.color = ""; 
-                    }
+//                 }
+//                 for (i = 0; i < list.length; i++){
+//                         list[i].style.color = ""; 
+//                     }
         
-                localStorage.clear();
-                localStorage.setItem("storedPlayers", JSON.stringify(players));
-                players.length = 0;
+//                 localStorage.clear();
+//                 localStorage.setItem("storedPlayers", JSON.stringify(players));
+//                 players.length = 0;
            
         
-            }
+//             }
 
-  type="text/javascript">
+//   type="text/javascript">
   jQuery.noConflict();
   jQuery(document).ready(function($) {
       $('.form-control').keyup(function(event) {
