@@ -164,7 +164,9 @@ function addPlayers(){
             }
         players.length = 0;
         //loop through and reset the color on all 
-        alert(players);
+        //problem is that it's not storing anything
+        //alert(players);
+        console.log(players);
         localStorage.setItem("storedPlayers", JSON.stringify(players));
 
     }
