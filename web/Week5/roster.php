@@ -200,7 +200,7 @@ function rollInitiative(){
     for (let i = 0; i < players.length; i++) {
         var string = players[i];
         var firstName = string.replace(/ .*/,'');
-        console.log(firstName);
+        alert(firstName);
     }
     window.location.href='encounters.php';
 }
