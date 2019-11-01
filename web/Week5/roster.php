@@ -180,7 +180,11 @@ function clearPlayers(){
 document.addEventListener("DOMContentLoaded" , ()=>{
     var playersFight = [];
     playersFight = JSON.parse(localStorage.getItem("storedPlayers"));
-    players.push(...playersFight);
+    console.log(playersFight);
+    for (var y = 0; y < playersFight.length; y++){
+        players.push(playersFight[i])
+    }
+    // players.push(...playersFight);
     console.log(players);
 //TODO make sure this doesn't crash on run
 
