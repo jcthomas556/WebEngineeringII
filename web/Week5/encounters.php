@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 })
   
   var temp = 10;
-  var rolledDice = <?php echo json_encode($diceRolls); ?>; 
+  //var rolledDice = <?php echo json_encode($diceRolls); ?>; 
   function addPlayersEncounter(){
     console.log(playersFight);
     //make a new display array, push each element into it, then display i and i+1 
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 //uncomment everything and this should be ready to display in order. Recomment the current display tool
         //displayArray.push(playersFight[i]);
         //displayArray.push(diceRolls[i]);     
-        alert(displayArray[i]);
+        console.log(displayArray);
 
         document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + temp + "</span>" + playersFight[i] + "</p>";   
         //temp = diceRolls[i];
