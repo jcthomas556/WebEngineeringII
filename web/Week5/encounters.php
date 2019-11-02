@@ -130,14 +130,14 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         
     }
   function reRoll(){
-    var temp;
-    var temp2;
+    var temp = 0;
+    var temp2 = 0;
     for(i=0; i<playersFight.length; i++){
     temp = displayArray[i];
     temp2 = (temp + Math.floor(Math.random() * 20) + 1);
 
 
-    document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists activePlayersEncounter' id = 'defaultList' style=' order : " + displayArray[i] + " ; background-color: papayawhip; '> <span class='badge' id='spanSpacing'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";
+    document.getElementById("activePlayersEncounter").innerHTML = "<p class = 'lists activePlayersEncounter' id = 'defaultList' style=' order : " + displayArray[i] + " ; background-color: papayawhip; '> <span class='badge' id='spanSpacing'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";
 
     }
   }
