@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         //displayArray.push(playersFight[i]);
         //displayArray.push(diceRolls[i]);     
         
-        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";   
+        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'></span>" + playersFight[i] + "</p>";   
         //temp = diceRolls[i];
         }
     // for (t = 0; t < displayArray.length; t = t+2){
