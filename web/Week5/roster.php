@@ -131,7 +131,7 @@ url = 'encounters.php?,';
 
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
-        list[i].style.backgroundColor = "lightgreen"; 
+        list[i].style.borderColor = "lightgreen"; 
 
         
         players.push(list[i].innerHTML); // fill the players array
