@@ -138,7 +138,8 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     temp2 = (temp + Math.floor(Math.random() * 20) + 1);
 
 
-    document.getElementById("activePlayersEncounter").innerHTML = "<p class = 'lists activePlayersEncounter' id = 'defaultList' style=' order : " + displayArray[i] + " ; background-color: papayawhip; '> <span class='badge' id='spanSpacing'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";
+
+    document.getElementById("activePlayersEncounter").innerHTML = "<p class = 'lists activePlayersEncounter' id = 'defaultList' style=' order : " + temp2 + " ; background-color: papayawhip; '> <span class='badge' id='spanSpacing'> " + temp2 + "</span>" + playersFight[i] + "</p>";
 
     }
   }
