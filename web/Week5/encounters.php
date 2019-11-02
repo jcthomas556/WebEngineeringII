@@ -97,16 +97,16 @@ document.addEventListener("DOMContentLoaded" , ()=>{
       $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
                 "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
                 $_SERVER['REQUEST_URI']; 
-       echo $link;
-       $people = (explode(",", $link, -2));
+       
+       $people = (explode(",", $link));
        //var_dump($people);
        //var_dump($group);
-       echo "the list is " . $people[1] . "   and   " . $people[2];
-      //  for($i=0; $i < count($people); $i++){
-      //    echo "stuff";
-      //    echo $group[$i+1];
-      //  }
-      // $endofurl = strrchr($r[`path`], ',');
+       //echo "the list is " . $people[1] . "   and   " . $people[2];
+       for($i=0; $i < count($people); $i++){
+         echo "stuff";
+         echo $people[$i];
+       }
+      //$endofurl = strrchr($r[`path`], ',');
       
      }
  ?>
