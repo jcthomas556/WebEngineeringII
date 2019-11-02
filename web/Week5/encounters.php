@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
                
               //  </script> </p>';
               echo '<script> document.getElementById("activePlayersEncounter").innerHTML += 
-              "<p class = "lists" id = "defaultList" style="order = " + temp + " "> <span class="badge"> " + temp + "</span>" + playersFight[i] + "</p>";</script>'
+              "<p> playersFight </p>" </script>';
 
               // echo '<script>  document.getElementById("activePlayersEncounter").innerHTML 
               // += "<p class = 'lists' id = 'defaultList' style='order = ' + temp + ' '> <span class='badge'> " 
