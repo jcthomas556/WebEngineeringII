@@ -133,6 +133,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     var temp = 0;
     var temp2 = 0;
     for(i=0; i<playersFight.length; i++){
+      console.log(displayArray);
     temp = displayArray[i];
     temp2 = (temp + Math.floor(Math.random() * 20) + 1);
 
