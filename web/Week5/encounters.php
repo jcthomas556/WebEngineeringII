@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
          //[2 = second name]
         $temp = $people[$i+1];
 
-        $diceRolls = [1,3,45,43,2];
+        $diceRolls = [0];
         foreach($db->query(
           "SELECT
               player_fname,
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
           {
               //echo '<p>' . $holder['player_init_bonus'] . '</p>';
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
-              //$diceRolls.push($playerRoll);
+              $diceRolls.push($playerRoll);
               
               //echo $playerRoll;
               echo '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '</span> </p>"';
