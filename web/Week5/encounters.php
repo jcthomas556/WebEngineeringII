@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
          //[2 = second name]
         $temp = $people[$i+1];
 
-         ($db->query(
+        foreach($db->query(
           "SELECT
               player_fname,
               player_init_bonus
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
               echo '<p class="lists" id="defaultList">' . $holder['player_init_bonus'] . '</p>';
               //echo '<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
           }
-
+          
 
        }
      }
