@@ -148,8 +148,8 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 //uncomment everything and this should be ready to display in order. Recomment the current display tool
         //displayArray.push(playersFight[i]);
         //displayArray.push(diceRolls[i]);     
-      var dice = "<?php echo $diceRolls[1] ?>"; 
-        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + dice + "</span>" + playersFight[i] + "</p>";   
+      
+        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + temp + "</span>" + playersFight[i] + "</p>";   
         //temp = diceRolls[i];
         }
     // for (t = 0; t < displayArray.length; t = t+2){
@@ -159,6 +159,8 @@ document.addEventListener("DOMContentLoaded" , ()=>{
  
 
     }
+    var dice = "<?php echo $diceRolls[1] ?>"; 
+    alert(dice);
 </script>
 
 </body>
