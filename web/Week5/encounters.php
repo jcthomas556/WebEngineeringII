@@ -124,7 +124,7 @@
 
  ?>
 
-<script>
+<script type="text/javascript">
 var playersFight=[];
 document.addEventListener("DOMContentLoaded" , ()=>{
     var result = JSON.parse(localStorage.getItem("storedPlayers"));
