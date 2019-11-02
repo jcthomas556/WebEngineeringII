@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     var temp2 = 0;
 
       //console.log(displayArray);
+      alert(displayArray[i]);
     temp = displayArray[i];
     temp2 = (temp + Math.floor(Math.random() * 20) + 1);
 
