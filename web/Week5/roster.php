@@ -159,7 +159,7 @@ function clearPlayers(){
     players.length = 0;
     document.getElementById("activePlayers").innerHTML = "";
     for (i = 0; i < list.length; i++){
-        list[i].style.backgroundcolor = ""; 
+        list[i].style.backgroundColor = ""; 
     }
     //loop through and reset the color on all ha
     localStorage.clear();
