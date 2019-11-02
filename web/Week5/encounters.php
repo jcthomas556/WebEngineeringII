@@ -148,9 +148,9 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
     playersBonus = <?php echo json_encode($playersBonuses); ?>;  
       //console.log(displayArray);
-       alert(playersBonus[i]);
-    // temp = rollResults[i];
-    // temp2 = (temp + Math.floor(Math.random() * 20) + 1);
+     //alert(playersBonus[i]);
+     temp = playersBonus[i];
+     temp2 = (temp + Math.floor(Math.random() * 20) + 1);
 
 
     
