@@ -53,10 +53,9 @@
 
 <script>
 var playersFight=[];
-var rolledDice = <?php echo json_encode($diceRolls); ?> 
 document.addEventListener("DOMContentLoaded" , ()=>{
     var result = JSON.parse(localStorage.getItem("storedPlayers"));
-    alert(rolledDice[1]);
+    
     for (var y = 0; y < result.length; y++){
         playersFight.push(result[y])
     }
