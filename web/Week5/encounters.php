@@ -131,8 +131,14 @@ document.addEventListener("DOMContentLoaded" , ()=>{
               // $tag = $test->div;
               // $cnt = $test->
               // document.getElementById("activePlayersEncounter").innerHTML += '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '"</span> </p>"';
-              echo '<p class = "lists" id = "activePlayersEncounter"> <span class="badge"> ' . $playerRoll . ' <script> + playersFight[i] + </script> </p>';
-
+              // echo '<p class = "lists" id = "activePlayersEncounter"> <span class="badge"> ' . $playerRoll . '
+              //  <script> 
+               
+              //   playersFight[i]  
+               
+              //  </script> </p>';
+              echo '<script> document.getElementById("activePlayersEncounter").innerHTML += 
+              "<p class = "lists" id = "defaultList" style="order = " + temp + " "> <span class="badge"> " + temp + "</span>" + playersFight[i] + "</p>";</script>'
 
               // echo '<script>  document.getElementById("activePlayersEncounter").innerHTML 
               // += "<p class = 'lists' id = 'defaultList' style='order = ' + temp + ' '> <span class='badge'> " 
