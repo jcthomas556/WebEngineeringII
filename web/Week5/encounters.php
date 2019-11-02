@@ -29,7 +29,7 @@
   <div id="activePlayersEncounter"></div>
 
     
-  <button type="button" class="btn btn-secondary btn-lg btn-block">Re-Roll</button>
+  <button type="button" onclick="addPlayersEncounter()" class="btn btn-secondary btn-lg btn-block">Re-Roll</button>
   
 </div>
 
