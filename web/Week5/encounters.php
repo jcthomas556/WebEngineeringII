@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     //make a new display array, push each element into it, then display i and i+1 
 
     var displayArray = <?php echo json_encode($diceRolls); ?>;
-    console.log(displayArray);
+    var_dump(displayArray);
 
     for (i = 0; i < playersFight.length; i++){
 //uncomment everything and this should be ready to display in order. Recomment the current display tool
