@@ -43,9 +43,9 @@
 
  	
  <div class="col-lg-1"> 
-  <button onclick="window.location.href='InitTracLanding.php'" type="button" class="btn btn-secondary btn-sm btn-block">Home</button>
+    <button onclick="window.location.href='roster.php'" type="button" class="btn btn-secondary btn-sm btn-block">End Fight</button> 
   <br>
-  <button onclick="window.location.href='roster.php'" type="button" class="btn btn-secondary btn-sm btn-block">End Fight</button>
+    <button onclick="window.location.href='InitTracLanding.php'" type="button" class="btn btn-secondary btn-sm btn-block">Home</button>
  </div>
  
  </div>
@@ -87,31 +87,15 @@ $diceRolls = array();
           WHERE
               npc_fname ='$temp'", PDO::FETCH_ASSOC) as $holder)
           {
-              //echo '<p>' . $holder['player_init_bonus'] . '</p>';
+              
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
               
               array_push($diceRolls, $playerRoll);
               
-              //echo $playerRoll;
-              ////////////this echo proves that dicerolls is working and filling echo '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '</span> </p>"';
-              //echo '<p class = "lists" id = "defaultList"> <span class="badge"> ' . $playerRoll . '</p>';
-              //echo '<p class = "lists" id = "defaultList"> <span class="badge"> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
-          }
-          
-          //var_dump($diceRolls);
+              
+          }          
        }
      }
-
-    
-    
-
-
-     
- 
-
-        //the number result from the query gets added to a d20 roll and then stuck into the array for global storage.
-
-    //pass the global variables to the encounter page to be
 
  ?>
 
@@ -124,9 +108,6 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         playersFight.push(result[y])
     }
     console.log(playersFight);
-    // for (var y = 0; y < playersFight.length; y++){
-    //     players.push(playersFight[y])
-    // }
 
     addPlayersEncounter();
 
@@ -135,14 +116,13 @@ document.addEventListener("DOMContentLoaded" , ()=>{
  
   function addPlayersEncounter(){
     console.log(playersFight);
-    //make a new display array, push each element into it, then display i and i+1 
 
     var displayArray = <?php echo json_encode($diceRolls); ?>;
     for (i = 0; i < playersFight.length; i++){
 
         console.log(displayArray);
 
-        //document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";   
+          
         document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists activePlayersEncounter' id = 'defaultList' style=' order : " + displayArray[i] + " ; background-color: papayawhip; '> <span class='badge' id='spanSpacing'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";
 
         }
