@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
     }
     var dice = "<?php echo $playerRoll ?>"; 
-    alert(dice);
+    console.log(dice);
 </script>
 
 </body>
