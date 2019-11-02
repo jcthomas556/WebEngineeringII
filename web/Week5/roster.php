@@ -154,7 +154,7 @@
 
 var list = document.getElementsByClassName("lists");
 var players = [];
-url = 'encounters.php?id=';
+url = 'encounters.php?';
 
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
