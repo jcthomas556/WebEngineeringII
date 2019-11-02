@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         console.log(displayArray);
 
         //document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";   
-        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList' style='order = " displayArray[i] " '> <span class='badge'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";
+        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList' style='order = " + displayArray[i] + " '> <span class='badge'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";
 
         }
    
