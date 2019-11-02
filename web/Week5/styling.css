@@ -28,3 +28,7 @@ background-image: url(https://arthousesouthampton.files.wordpress.com/2013/12/pa
 background-size: cover !important ;
 
 }
+
+#spanSpacing{
+  float: left;
+}
