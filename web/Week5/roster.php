@@ -131,7 +131,7 @@ url = 'encounters.php?,';
 
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
-        list[i].style.borderColor = "green"; 
+        list[i].style.backgroundColor = "lightgreen"; 
 
         
         players.push(list[i].innerHTML); // fill the players array
@@ -159,7 +159,7 @@ function clearPlayers(){
     players.length = 0;
     document.getElementById("activePlayers").innerHTML = "";
     for (i = 0; i < list.length; i++){
-        list[i].style.color = ""; 
+        list[i].style.backgroundcolor = ""; 
     }
     //loop through and reset the color on all ha
     localStorage.clear();
