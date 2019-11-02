@@ -19,7 +19,7 @@
 #activePlayersEncounter{
   display:flex;
   flex-direction:column-reverse;
-  order: <integer>;
+  order: 0;
   /* order: <number>; */
 }
 
