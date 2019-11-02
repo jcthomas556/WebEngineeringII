@@ -131,12 +131,15 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         
     }
   function reRoll(){
-    var temp = 0;
-    var temp2 = 0;
+    //var temp = 0;
+    //var temp2 = 0;
 
 
     document.getElementById("activePlayersEncounter").innerHTML = "";
     for(i=0; i<displayArray.length; i++){
+      var temp = 0;
+    var temp2 = 0;
+
       //console.log(displayArray);
     temp = displayArray[i];
     temp2 = (temp + Math.floor(Math.random() * 20) + 1);
