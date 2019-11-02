@@ -134,18 +134,16 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     var temp = 0;
     var temp2 = 0;
 
-    var element = document.getElementById("activePlayersEncounter");
-    element.parentNode.removeChild(element);
-addPlayersEncounter();
-    //document.getElementById("activePlayersEncounter").innterHTML += "<p></p>";
-    // for(i=0; i<displayArray.length; i++){
-    //   //console.log(displayArray);
-    // temp = displayArray[i];
-    // temp2 = (temp + Math.floor(Math.random() * 20) + 1);
+
+    document.getElementById("activePlayersEncounter").innerHTML = "";
+    for(i=0; i<displayArray.length; i++){
+      //console.log(displayArray);
+    temp = displayArray[i];
+    temp2 = (temp + Math.floor(Math.random() * 20) + 1);
 
 
     
-    // document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists activePlayersEncounter' id = 'defaultList' style=' order : " + temp2 + " ; background-color: papayawhip; '> <span class='badge' id='spanSpacing'> " + temp2 + "</span>" + playersFight[i] + "</p>";
+    document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists activePlayersEncounter' id = 'defaultList' style=' order : " + temp2 + " ; background-color: papayawhip; '> <span class='badge' id='spanSpacing'> " + temp2 + "</span>" + playersFight[i] + "</p>";
 
     }
   }
