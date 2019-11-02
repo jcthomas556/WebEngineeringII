@@ -102,6 +102,8 @@ $diceRolls = array();
 <script>
 var playersFight=[];
 var displayArray =[];
+var rollResults = [];
+
 document.addEventListener("DOMContentLoaded" , ()=>{
     var result = JSON.parse(localStorage.getItem("storedPlayers"));
     
@@ -119,6 +121,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     console.log(playersFight);
 
     displayArray = <?php echo json_encode($diceRolls); ?>;  /////////////////
+
     for (i = 0; i < playersFight.length; i++){
 
         console.log(displayArray);
@@ -140,9 +143,10 @@ document.addEventListener("DOMContentLoaded" , ()=>{
       var temp = 0;
     var temp2 = 0;
 
+    rollResults = <?php echo json_encode($diceRolls); ?>;  
       //console.log(displayArray);
-      alert(displayArray[i]);
-    temp = displayArray[i];
+      alert(rollResults[i]);
+    temp = rollResults[i];
     temp2 = (temp + Math.floor(Math.random() * 20) + 1);
 
 
