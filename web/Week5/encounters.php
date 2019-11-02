@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
    
         
     }
-  function reRoll(){
+  function reRoll(displayArray){
     var temp = 0;
     var temp2 = 0;
     for(i=0; i<playersFight.length; i++){
