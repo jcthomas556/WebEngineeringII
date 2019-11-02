@@ -124,8 +124,10 @@ document.addEventListener("DOMContentLoaded" , ()=>{
           WHERE
               npc_fname ='$temp'", PDO::FETCH_ASSOC) as $holder)
           {
-              echo '<p class="lists" id="defaultList">' . $holder['player_init_bonus'] . '</p>';
-              //echo '<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
+              //echo '<p>' . $holder['player_init_bonus'] . '</p>';
+              $playerRoll = $holder['player_init_bonus'] + rand(1,20);
+              echo $playerRoll;
+              //echo '<p class = "lists" id = "defaultList"> <span class="badge"> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
           }
           
 
