@@ -132,28 +132,22 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
 })
   
-  var temp = 10;
-  //var rolledDice = <?php echo json_encode($diceRolls); ?>; 
+ 
   function addPlayersEncounter(){
     console.log(playersFight);
     //make a new display array, push each element into it, then display i and i+1 
 
     var displayArray = <?php echo json_encode($diceRolls); ?>;
     for (i = 0; i < playersFight.length; i++){
-//uncomment everything and this should be ready to display in order. Recomment the current display tool
-        //displayArray.push(playersFight[i]);
-        //displayArray.push(diceRolls[i]);     
+
         console.log(displayArray);
 
-        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";   
-        //temp = diceRolls[i];
+        //document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";   
+        document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList' style='order = " + displayArray[i] + " '> <span class='badge'> " + displayArray[i] + "</span>" + playersFight[i] + "</p>";
+
         }
-    // for (t = 0; t < displayArray.length; t = t+2){
-    //   document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>";   
-
-    // }
- 
-
+   
+        
     }
 </script>
 </body>
