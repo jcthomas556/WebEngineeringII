@@ -133,7 +133,11 @@ document.addEventListener("DOMContentLoaded" , ()=>{
   function reRoll(){
     var temp = 0;
     var temp2 = 0;
-    document.getElementById("activePlayersEncounter").innterHTML += "<p></p>";
+
+    var element = document.getElementById("activePlayersEncounter");
+    element.parentNode.removeChild(element);
+
+    //document.getElementById("activePlayersEncounter").innterHTML += "<p></p>";
     for(i=0; i<displayArray.length; i++){
       //console.log(displayArray);
     temp = displayArray[i];
