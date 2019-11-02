@@ -90,9 +90,9 @@ $playersBonuses = array();
           {
               
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
+              //$temp = $holder['player_init_bonus'];
 
-
-              array_push($playersBonuses, $holder['player_init_bonus'] ;)
+              array_push($playersBonuses, $holder['player_init_bonus'] );
               array_push($diceRolls, $playerRoll);
               
               
