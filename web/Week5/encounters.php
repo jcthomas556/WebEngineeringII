@@ -127,8 +127,14 @@ document.addEventListener("DOMContentLoaded" , ()=>{
               //echo '<p>' . $holder['player_init_bonus'] . '</p>';
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
               //echo $playerRoll;
-              echo 'document.getElementById("activePlayersEncounter").innerHTML += <p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '"</span> </p>"';
-              //echo '<p class = "lists" id = "defaultList"> <span class="badge"> ' . $playerRoll . '</p>';
+              //create the DOM object
+              // $dochtml = new DOMDocument();
+              // $dochtml->loadHTMLFile('encounters.php');
+              // $test = $dochtml->getElementByID('activePlayersEncounter');
+              // $tag = $test->div;
+              // $cnt = $test->
+              // document.getElementById("activePlayersEncounter").innerHTML += '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '"</span> </p>"';
+              echo '<p class = "lists" id = "activePlayersEncounter"> <span class="badge"> ' . $playerRoll . '</p>';
               //echo '<p class = "lists" id = "defaultList"> <span class="badge"> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
           }
           
