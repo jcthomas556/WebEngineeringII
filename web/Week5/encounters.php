@@ -98,13 +98,13 @@ document.addEventListener("DOMContentLoaded" , ()=>{
                 "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
                 $_SERVER['REQUEST_URI']; 
        echo $link;
-       $people = (explode(",", $link));
+       $people = (explode(",", $link, -1));
        //var_dump($people);
        //var_dump($group);
        //echo "the list is " . $people[1] . "   and   " . $people[2];
-       for($i=0; $i < count($people); $i++){
+       for($i=0; $i < count($people) - 1; $i++){
          echo "stuff";
-         echo $people[$i];
+         echo $people[$i+1];
        }
       //$endofurl = strrchr($r[`path`], ',');
       
