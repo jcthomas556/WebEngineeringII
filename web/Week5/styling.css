@@ -15,7 +15,7 @@
   text-align: center;
   }
 
-  #activePlayersEncounter{
+  .activePlayersEncounter{
     display:flex;
     flex-direction:column-reverse;
     /* order: <number>; */
