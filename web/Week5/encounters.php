@@ -59,10 +59,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     for (var y = 0; y < result.length; y++){
         playersFight.push(result[y])
     }
-    console.log(playersFight);
-    // for (var y = 0; y < playersFight.length; y++){
-    //     players.push(playersFight[y])
-    // }
+    
 
     addPlayersEncounter();
 
@@ -134,7 +131,9 @@ document.addEventListener("DOMContentLoaded" , ()=>{
               // $tag = $test->div;
               // $cnt = $test->
               // document.getElementById("activePlayersEncounter").innerHTML += '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '"</span> </p>"';
-              echo '<p class = "lists" id = "activePlayersEncounter"> <span class="badge"> ' . $playerRoll . '  ' . . '</p>';
+              echo '<p class = "lists" id = "activePlayersEncounter"> <span class="badge"> ' . $playerRoll . '  ' .  . '</p>';
+
+              
               //echo '<p class = "lists" id = "defaultList"> <span class="badge"> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
           }
           
