@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 })
   
   var temp = 10;
+  var rolledDice = <?php echo json_encode($diceRolls); ?>; 
   function addPlayersEncounter(){
     console.log(playersFight);
     //make a new display array, push each element into it, then display i and i+1 
