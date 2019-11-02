@@ -170,8 +170,10 @@ for (let i = 0; i < list.length; i++) {
         
         delete url;
         url = result;
+        //shown to work ^
+        //url will equal the new url
 
-        alert(url);
+    
         
         
 
@@ -220,7 +222,7 @@ function rollInitiative(){
     // }
     // alert(firstName);
     // alert('madeit3');
-    window.location.href='encounters.php';
+    window.location.href=url;
 }
 
 
