@@ -124,7 +124,7 @@
 
  ?>
 
-<script type="text/javascript">
+<script >
 var playersFight=[];
 document.addEventListener("DOMContentLoaded" , ()=>{
     var result = JSON.parse(localStorage.getItem("storedPlayers"));
@@ -143,12 +143,13 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
     //make a new display array, push each element into it, then display i and i+1 
 
-    var displayArray = <?php echo json_encode($diceRolls); ?>;
+    //var displayArray = <?php echo json_encode($diceRolls); ?>;
+    
     for (i = 0; i < playersFight.length; i++){
 //uncomment everything and this should be ready to display in order. Recomment the current display tool
         //displayArray.push(playersFight[i]);
         //displayArray.push(diceRolls[i]);  
-        console.log(displayArray);   
+        //console.log(displayArray);   
       
         document.getElementById("activePlayersEncounter").innerHTML += "<p class = 'lists' id = 'defaultList'> <span class='badge'> " + temp + "</span>" + playersFight[i] + "</p>";   
         //temp = diceRolls[i];
