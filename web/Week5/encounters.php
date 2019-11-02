@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
  
 
     }
-    var dice = "<?php echo $diceRolls[1] ?>"; 
+    var dice = "<?php echo $playerRoll ?>"; 
     alert(dice);
 </script>
 
