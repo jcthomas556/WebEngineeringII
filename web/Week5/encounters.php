@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
 
 <?php
+$diceRolls = array();
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
                 "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
@@ -107,7 +108,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
          //[2 = second name]
         $temp = $people[$i+1];
 
-        $diceRolls = array();
+        
         foreach($db->query(
           "SELECT
               player_fname,
