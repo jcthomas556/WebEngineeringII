@@ -96,9 +96,9 @@ document.addEventListener("DOMContentLoaded" , ()=>{
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
        $people = explode(",", $group);
        var_dump($people);
-       var_dump($group);
+       //var_dump($group);
        for($i=0; $i < 9; $i++){
-         
+         echo "stuff";
          echo $group[$i+1];
        }
      }
