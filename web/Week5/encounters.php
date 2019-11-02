@@ -52,7 +52,7 @@
 
  <?php
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-       alert("get!")
+       alert("get!");
      }
  ?>
 
