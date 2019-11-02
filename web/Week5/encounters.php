@@ -134,7 +134,8 @@ document.addEventListener("DOMContentLoaded" , ()=>{
               //echo $playerRoll;
               $diceRolls.push($playerRoll);
               //echo $diceRolls;
-              echo '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '"</span> </p>"';
+              //echo $diceRolls;
+              echo '<p class = "lists" id = "defaultList" style="order = "' . $diceRolls . ' > <span class="badge">' . $diceRolls . '"</span> </p>"';
       
           }
           //echo $diceRolls;
