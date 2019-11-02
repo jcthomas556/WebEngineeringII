@@ -95,6 +95,8 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 <?php
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
        $people = explode(",", $group);
+       var_dump($people);
+       var_dump($group);
        for($i=0; $i < 9; $i++){
          
          echo $people[$i];
