@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 <?php
  $diceRolls = [];
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+       echo "got";
       $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
                 "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
                 $_SERVER['REQUEST_URI']; 
@@ -132,11 +133,11 @@ document.addEventListener("DOMContentLoaded" , ()=>{
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
               //echo $playerRoll;
               $diceRolls.push($playerRoll);
-              var_dump($diceRolls);
+              echo $diceRolls;
               //echo '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '"</span> </p>"';
       
           }
-          var_dump($diceRolls);
+          echo $diceRolls;
 
        }
      }
