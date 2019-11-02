@@ -154,13 +154,26 @@
 
 var list = document.getElementsByClassName("lists");
 var players = [];
+url = 'encounters.php?id=';
 
 for (let i = 0; i < list.length; i++) {
     list[i].onclick = function() { 
         list[i].style.color = "green"; 
 
         
-        players.push(list[i].innerHTML);
+        players.push(list[i].innerHTML); // fill the players array
+
+        var string = players[i];
+        var firstName = string.replace(/ .*/,''); // get the string out of players and put it in firstName
+        
+        var result = url.concat(firstName, ",");
+        
+        delete url;
+        url = result;
+
+        alert(url);
+        
+        
 
         //var string = players[i];
 
