@@ -97,18 +97,52 @@ document.addEventListener("DOMContentLoaded" , ()=>{
       $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
                 "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
                 $_SERVER['REQUEST_URI']; 
-       //echo $link;
+       
        $people = (explode(",", $link, -1));
-       //var_dump($people);
-       //var_dump($group);
-       //echo "the list is " . $people[1] . "   and   " . $people[2];
+       
        for($i=0; $i < count($people) - 1; $i++){
-         //echo "stuff";
-         echo $people[$i+1];
+        
+         //echo $people[$i+1];
+         //[1 = first name]
+         //[2 = second name]
+        $temp = $people[$i+1];
+
+         ($db->query(
+          "SELECT
+              player_fname,
+              player_init_bonus
+          FROM
+              player_characters
+          WHERE
+              player_fname = '$temp'
+          UNION
+          SELECT
+            npc_fname,
+            npc_init_bonus
+          FROM
+            npc_characters
+          WHERE
+              npc_fname ='$temp'", PDO::FETCH_ASSOC) as $holder)
+          {
+              echo '<p class="lists" id="defaultList">' . $holder['player_init_bonus'] . '</p>';
+              //echo '<p class = 'lists' id = 'defaultList'> <span class='badge'> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
+          }
+
+
        }
-      //$endofurl = strrchr($r[`path`], ',');
-      
      }
+
+    
+    
+
+
+     
+ 
+
+        //the number result from the query gets added to a d20 roll and then stuck into the array for global storage.
+
+    //pass the global variables to the encounter page to be
+
  ?>
 
 </body>
