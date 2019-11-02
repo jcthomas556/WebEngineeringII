@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     //make a new display array, push each element into it, then display i and i+1 
 
     var displayArray = <?php echo json_encode($diceRolls); ?>;
-    alert(displayArray);
+    //alert(displayArray);
 
     for (i = 0; i < playersFight.length; i++){
 //uncomment everything and this should be ready to display in order. Recomment the current display tool
@@ -132,10 +132,11 @@ document.addEventListener("DOMContentLoaded" , ()=>{
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
               //echo $playerRoll;
               $diceRolls.push($playerRoll);
-              echo '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '"</span> </p>"';
+              var_dump($diceRolls);
+              //echo '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '"</span> </p>"';
       
           }
-          
+          var_dump($diceRolls);
 
        }
      }
