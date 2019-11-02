@@ -14,3 +14,16 @@
   border: solid grey 4px;
   text-align: center;
   }
+
+  #activePlayersEncounter{
+    display:flex;
+    flex-direction:column-reverse;
+    /* order: <number>; */
+  }
+
+ .paper{
+  background-image: url(https://arthousesouthampton.files.wordpress.com/2013/12/paper-background.jpg);
+  background-size: cover;
+  
+ }
+  
