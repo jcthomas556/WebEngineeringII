@@ -22,8 +22,8 @@
   }
 
  .paper{
-  background-image: url(https://arthousesouthampton.files.wordpress.com/2013/12/paper-background.jpg);
-  background-size: cover;
+  background-image: url(https://arthousesouthampton.files.wordpress.com/2013/12/paper-background.jpg) !important ;
+  background-size: cover !important ;
   
  }
   
