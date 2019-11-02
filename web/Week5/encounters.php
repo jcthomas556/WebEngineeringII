@@ -50,6 +50,12 @@
  
  </div>
 
+ <?php
+     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+       alert("get!")
+     }
+ ?>
+
 <script>
 var playersFight=[];
 document.addEventListener("DOMContentLoaded" , ()=>{
