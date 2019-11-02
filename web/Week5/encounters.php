@@ -94,10 +94,11 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
 <?php
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-      // $endofurl = strrchr($r[`path`], ',');
-      
-      
-       $people = (explode(",", $group));
+      $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
+                "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
+                $_SERVER['REQUEST_URI']; 
+       echo $link;
+       $people = (explode(",", $link, -2));
        //var_dump($people);
        //var_dump($group);
        echo "the list is " . $people[1] . "   and   " . $people[2];
@@ -105,6 +106,8 @@ document.addEventListener("DOMContentLoaded" , ()=>{
       //    echo "stuff";
       //    echo $group[$i+1];
       //  }
+      // $endofurl = strrchr($r[`path`], ',');
+      
      }
  ?>
 
