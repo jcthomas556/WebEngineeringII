@@ -55,6 +55,7 @@
 
 <?php
 $diceRolls = array();
+$playersBonuses = array();
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 
                 "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  
@@ -89,7 +90,9 @@ $diceRolls = array();
           {
               
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
-              
+
+
+              array_push($playersBonuses, $holder['player_init_bonus'] ;)
               array_push($diceRolls, $playerRoll);
               
               
@@ -102,7 +105,7 @@ $diceRolls = array();
 <script>
 var playersFight=[];
 var displayArray =[];
-var rollResults = [];
+var playersBonus = [];
 
 document.addEventListener("DOMContentLoaded" , ()=>{
     var result = JSON.parse(localStorage.getItem("storedPlayers"));
@@ -143,11 +146,11 @@ document.addEventListener("DOMContentLoaded" , ()=>{
       var temp = 0;
     var temp2 = 0;
 
-    rollResults = <?php echo json_encode($diceRolls); ?>;  
+    playersBonus = <?php echo json_encode($playersBonuses); ?>;  
       //console.log(displayArray);
-      alert(rollResults[i]);
-    temp = rollResults[i];
-    temp2 = (temp + Math.floor(Math.random() * 20) + 1);
+       alert(playersBonus[i]);
+    // temp = rollResults[i];
+    // temp2 = (temp + Math.floor(Math.random() * 20) + 1);
 
 
     
