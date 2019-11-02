@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
               //echo $playerRoll;
               $diceRolls.push($playerRoll);
-              //echo $diceRolls;
+              echo $diceRolls;
               //echo $diceRolls;
               echo '<p class = "lists" id = "defaultList" style="order = "' . $diceRolls . ' > <span class="badge">' . $diceRolls . '"</span> </p>"';
       
