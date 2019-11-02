@@ -53,9 +53,10 @@
 
 <script>
 var playersFight=[];
+var rolledDice = <?php echo json_encode($diceRolls); ?> 
 document.addEventListener("DOMContentLoaded" , ()=>{
     var result = JSON.parse(localStorage.getItem("storedPlayers"));
-    
+    alert(rolledDice[1]);
     for (var y = 0; y < result.length; y++){
         playersFight.push(result[y])
     }
@@ -132,12 +133,12 @@ $diceRolls = array();
               array_push($diceRolls, $playerRoll);
               
               //echo $playerRoll;
-              echo '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '</span> </p>"';
+              ////////////this echo proves that dicerolls is working and filling echo '<p class = "lists" id = "defaultList" style="order = "' . $playerRoll . ' > <span class="badge">' . $playerRoll . '</span> </p>"';
               //echo '<p class = "lists" id = "defaultList"> <span class="badge"> ' . $playerRoll . '</p>';
               //echo '<p class = "lists" id = "defaultList"> <span class="badge"> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
           }
           
-          var_dump($diceRolls);
+          //var_dump($diceRolls);
        }
      }
 
