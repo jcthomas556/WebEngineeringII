@@ -17,7 +17,7 @@
   <script src="scriptCode.js"></script>
 
 </head>
-<body>
+<body class="paper">
 
 
 <div class="jumbotron text-center" style="background-color:maroon">
