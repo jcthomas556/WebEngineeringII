@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
        var_dump($group);
        for($i=0; $i < 9; $i++){
          
-         echo $people[$i+1];
+         echo $group[$i+1];
        }
      }
  ?>
