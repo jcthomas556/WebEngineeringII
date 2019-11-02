@@ -94,13 +94,17 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
 <?php
      if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-       $people = explode(",", $group);
-       var_dump($people);
+      // $endofurl = strrchr($r[`path`], ',');
+      
+      
+       $people = (explode(",", $group));
+       //var_dump($people);
        //var_dump($group);
-       for($i=0; $i < count($people); $i++){
-         echo "stuff";
-         echo $group[$i+1];
-       }
+       echo "the list is " . $people[1] . "   and   " . $people[2];
+      //  for($i=0; $i < count($people); $i++){
+      //    echo "stuff";
+      //    echo $group[$i+1];
+      //  }
      }
  ?>
 
