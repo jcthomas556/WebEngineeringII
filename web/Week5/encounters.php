@@ -126,7 +126,8 @@ document.addEventListener("DOMContentLoaded" , ()=>{
           {
               //echo '<p>' . $holder['player_init_bonus'] . '</p>';
               $playerRoll = $holder['player_init_bonus'] + rand(1,20);
-              echo $playerRoll;
+              //echo $playerRoll;
+              echo '<p class = "lists" id = "defaultList"> <span class="badge"> ' . $playerRoll . '</p>';
               //echo '<p class = "lists" id = "defaultList"> <span class="badge"> " + displayArray[t+1] + "</span>" + displayArray[t] + "</p>';
           }
           
