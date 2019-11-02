@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
        $people = explode(" ", $group);
        foreach($people as $group){
          echo $group;
-         echo $people;
+         //echo $people;
        }
      }
  ?>
